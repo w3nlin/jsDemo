@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #main{
+            margin: 200px auto;
+            width: 800px;
+            height:800px;
+            border-radius: 50%;
+            border:5px solid black;
+            perspective: 200px;
+            position: relative;
+        }
+        #main>div:nth-child(1){
+            width: 20px;
+            height:100px;
+            background: red;
+            transform-origin: center bottom;
+            position: absolute;
+            bottom:50%;
+            left: 50%;
+        }
+        #main>div:nth-child(2){
+            width: 10px;
+            height:200px;
+            background: blue;
+            transform-origin: center bottom;
+            position:absolute;
+            bottom:50%;
+            left: 50%;
+        }
+
+        #main>div:nth-child(3){
+            width: 5px;
+            height:300px;
+            background: grey;
+            transform-origin: center bottom;
+            position: absolute;
+            bottom:50%;
+            left: 50%;
+        }
+
+    </style>
+    <script>
+        window.onload=function(){
+            getTimeFormat();
+            setInterval(getTime,1000);
+            function getTimeFormat(){
+                var date=new Date();
+                var hours=date.getHours();
+                var minutes=date.getMinutes()
+                var seconds=date.getSeconds();
+                if(hours>=12){
+                    hours=hours-12;
+                }
+                d1.style.transform="rotateZ("+hours*30+"deg)";
+                d2.style.transform="rotateZ("+minutes*6+"deg)";
+                d3.style.transform="rotateZ("+seconds*6+"deg)";
+                console.log(seconds);
+            }
+            function getTime(){
+                var date=new Date();
+                var hours=date.getHours();
+                var minutes=date.getMinutes()
+                var seconds=date.getSeconds();
+                if(hours>=12){
+                    hours=hours-12;
+                }
+                d1.style.transition="1s";
+                d2.style.transition="1s";
+                d3.style.transition="1s";
+                d1.style.transform="rotateZ("+hours*30+"deg)";
+                d2.style.transform="rotateZ("+minutes*6+"deg)";
+                d3.style.transform="rotateZ("+seconds*6+"deg)";
+                console.log(seconds);
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="main">
+    <div id="d1" class="d1"></div>
+    <div id="d2" class="d2"></div>
+    <div id="d3" class="d3"></div>
+</div>
+</body>
+</html>
