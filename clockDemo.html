@@ -41,16 +41,45 @@
             bottom:50%;
             left: 50%;
         }
-
+        .ff{
+            width: 25%;
+            height:25%;
+            line-height: 200px;
+            text-align: center;
+            /*border: 1px solid blue;*/
+            position: absolute;
+            font-size: 200px;
+        }
+        .f1{
+            left: 37.5%;
+            top:0;
+        }
+        .f2{
+            right: 0;
+            top:37.5%;
+        }
+        .f3{
+            left:37.5%;
+            bottom:0;
+        }
+        .f4{
+            left:0;
+            top:37.5%;
+        }
     </style>
     <script>
         window.onload=function(){
+            var minutesSum=0;
+            var n=0;
+            var sum2=0;
+            var secondsSum=0;
+            var sum3=0;
             getTimeFormat();
             setInterval(getTime,1000);
             function getTimeFormat(){
                 var date=new Date();
                 var hours=date.getHours();
-                var minutes=date.getMinutes()
+                var minutes=date.getMinutes();
                 var seconds=date.getSeconds();
                 if(hours>=12){
                     hours=hours-12;
@@ -58,23 +87,30 @@
                 d1.style.transform="rotateZ("+hours*30+"deg)";
                 d2.style.transform="rotateZ("+minutes*6+"deg)";
                 d3.style.transform="rotateZ("+seconds*6+"deg)";
-                console.log(seconds);
+
             }
             function getTime(){
                 var date=new Date();
                 var hours=date.getHours();
-                var minutes=date.getMinutes()
+                var minutes=date.getMinutes();
                 var seconds=date.getSeconds();
                 if(hours>=12){
                     hours=hours-12;
                 }
+                if(minutes==0){n++;console.log(n);if(n%60==0){minutesSum+=60;}}
+                sum2=minutes+minutesSum;
+
+                if(seconds==0){secondsSum+=60}
+                sum3=seconds+secondsSum;
+
                 d1.style.transition="1s";
                 d2.style.transition="1s";
                 d3.style.transition="1s";
                 d1.style.transform="rotateZ("+hours*30+"deg)";
-                d2.style.transform="rotateZ("+minutes*6+"deg)";
-                d3.style.transform="rotateZ("+seconds*6+"deg)";
-                console.log(seconds);
+                d2.style.transform="rotateZ("+sum2*6+"deg)";
+                d3.style.transform="rotateZ("+sum3*6+"deg)";
+                console.log(sum2);
+                console.log(sum3);
             }
         }
     </script>
@@ -84,6 +120,10 @@
     <div id="d1" class="d1"></div>
     <div id="d2" class="d2"></div>
     <div id="d3" class="d3"></div>
+    <div class="f1 ff">12</div>
+    <div class="f2 ff">3</div>
+    <div class="f3 ff">6</div>
+    <div class="f4 ff">9</div>
 </div>
 </body>
 </html>
