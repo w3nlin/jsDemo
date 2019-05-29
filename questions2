@@ -1,0 +1,3520 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #t1{
+            display:block;
+            width: 50%;
+            height: 3em;
+            margin: 0 auto;
+        }
+        pre{
+            display:none;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+                t1.onfocus=function(){
+                    for(var i=0;i<main.children.length;i++){
+                        main.children[i].style.display="none";
+                    }
+                }
+                t1.onblur=function(e){
+                    for(var i=0;i<main.children.length;i++){
+                        if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1&&(t1.value!="")){
+                            main.children[i].style.display="block";
+                            main.children[i].style.border="1px dashed blue";
+                        }
+                    }
+                }
+                document.onkeydown=function(e){
+                    if(e.keyCode==13){
+                        for(var i=0;i<main.children.length;i++){
+                            if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1){
+                                main.children[i].style.display="block";
+                                main.children[i].style.border="1px dashed blue";
+                            }
+                        }
+                    }
+                
+            }
+            }
+    </script>
+</head>
+<body>
+<input id="t1" type="text" />
+<div id="main">
+    <pre>(单选题)ajax 的全称是()
+A.Asynchronous JavaScript and XML
+B.Asynchronous JavaScript HXML
+C.Asynchronous JavaScript and XHML
+D.Asynchronous Java and XML
+【正确答案】A
+</pre>
+    <pre>(单选题)下列获取AJAX对象正确的是()
+A.function getXhr(){
+var xhr = null;
+if(window.XMLHttpResponse){
+xhr = new XMLHttpRequest();
+}else{
+xhr = new ActiveXObject("Microsoft.XMLHttp");}
+return xhr;
+}
+B.function getXhr(){
+var xhr = null;
+if(window.XMLHttpRequest){
+xhr = new XMLHttpRequest();
+}else{
+xhr = new ActiveXObject("Microsoft.XMLHttp");}
+return xhr;
+}
+C.function getXhr(){
+var xhr = null;
+if(window.XMLHttpResponse){
+xhr = new XMLHttpRequest();
+}else{
+xhr = new ActiveXObject("Microsoft.XMLHttp");}
+return xhr;
+}
+D.function getXhr(){
+var xhr = null;
+if(XMLHttpRequest){
+xhr = new XMLHttpRequest();
+}else{
+xhr = new ActiveXObject("Microsoft.XMLHttp");}
+return xhr;
+}
+【正确答案】B
+    </pre>
+    <pre>(单选题)下面不属于ajax事件的是()
+A.ajaxComplete(callback)
+B.ajaxSuccess(callback)
+C.$.post(url)
+D.ajaxSend(callback)
+【正确答案】C
+</pre>
+    <pre>(单选题)状态吗"416"表示()
+A.请求中包含Range请求头字段,在当前请求资源范围内没有range指示值,请求也不包含If-Range请求头字段
+B.服务器不满足请求Expect头字段指定的期望值,如果是代理服务器,可能是下一级服务器不能满足请求
+C.请求资源不支持请求项目格式
+D.服务器产生内部错误
+【正确答案】A
+</pre>
+    <pre>(单选题)()对象用于在后台与服务器交换数据,能够在不重新加载整个网页（刷新）的情况下,对网页进行部分更新
+A.HttpRequest
+B.ActiveXObject
+C.statusText
+D.XMLHttpRequest
+【正确答案】D
+</pre>
+    <pre>(单选题)()方法用来初始化 HTTP 请求参数,但是并不发送请求
+A.send()
+B.open()
+C.readyState()
+D.XMLHttpRequest()
+【正确答案】B
+</pre>
+    <pre>(多选题)jquery ajax中都支持()返回类型
+A.xml
+B.html
+C.jsonp
+D.json
+【正确答案】A,B,C,D
+    </pre>
+    <pre>(多选题)下列关于比较Ajax与Flash的优缺点,相关描述正确的是()
+A.Ajax的优势在意在于可搜索性，开放性，易用性及易于开发
+B.Flash的优势在于多媒体处理，可以更容易的调用浏览器以外的外部资源
+C.Ajax最主要的批评就是它可能破坏浏览器的后退功能
+D.flash 文件经常会很大，用户第一次使用的时候需要忍耐较长的等待时间
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)Ajax是()
+A.一种创建交互式网页应用的网页开发技术
+B.一种用于创建快速动态网页的技术
+C.一种创建交互式网页应用的网页开源技术
+D.一种用于创建动态网页的技术
+【正确答案】A,B
+</pre>
+    <pre>(多选题)status 属性状态码表述正确的是()
+A.1表示请求收到，继续处理
+B.100表示客户必须继续发出请求
+C.307表示申明请求的资源临时性删除
+D.416表示请求中包含Range请求头字段,在当前请求资源范围内没有range指示值,请求也不包含If-Range请求头字段
+【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)JavaScript ()函数可用于将 JSON 文本转换为 JavaScript 对象
+A.has()
+B.eval()
+C.name()
+D.JSONObject.name
+【正确答案】B
+</pre>
+    <pre>(单选题)JSON 文本的 MIME 类型是()
+A.application/json
+B..json
+C.application
+D.json
+【正确答案】A
+</pre>
+    <pre>(多选题)什么是 JSON ()
+A.JSON 指的是 JavaScript 对象表示法（JavaScript Object Notation）
+B.JSON 是轻量级的文本数据交换格式
+C.JSON 独立于语言 *
+D.JSON 具有自我描述性，更易理解
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)下面()是JSON数据
+A.｛name:"xiaoming",age,"student"｝
+B.｛"name":"xiaoming","age":"student"｝
+C.｛"xiaoming","student"｝
+D.["xiaoming","student"]
+【正确答案】B,D
+</pre>
+    <pre>(多选题)JSON 值不可以是()
+A.数字（整数或浮点数）
+B.逻辑值（true 或 false）
+C.数组（在花括号中）
+D.对象（在方括号中）
+【正确答案】C,D
+</pre>
+    <pre>(多选题)JSON 语法规则()
+A.数据在名称/值对中
+B.花括号保存对象
+C.数据由逗号分隔
+D.方括号保存数组
+【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)在 XML 中,有 ()个预定义的实体引用
+A.3
+B.5
+C.4
+D.2
+【正确答案】B
+</pre>
+    <pre>(单选题)下面描述错误的是()
+A.XML 元素都须有关闭标签
+B.XML 标签对大小写敏感
+C.XML 的属性值可不加引号
+D.XML 文档必须有根元素
+【正确答案】C
+</pre>
+    <pre>(单选题)关于XML属性描述有误的是()
+A.XML 元素可以在开始标签中包含属性,类似 HTML
+B.XML 属性必须加分号
+C.属性无法包含多重的值
+D.元数据应当存储为属性，而数据本身应当存储为元素
+【正确答案】B
+</pre>
+    <pre>(单选题)XML是指()
+A.一种语言
+B.超文本标记语言
+C.文本标记语言
+D.可扩展标记语言
+【正确答案】D
+</pre>
+    <pre>(单选题)()样式可用于要弹出信息的按钮
+A..btn-info
+B..btn-link
+C..btn-danger
+D..btn-default
+【正确答案】A
+</pre>
+    <pre>(单选题)根据栅格系统的标准用法,错误的是()
+A.&lt;div class="container"&gt;&lt;br&gt;  &lt;div class="row"&gt;
+            B.&lt;div class="row"><br>   &lt;div class="col-md-1"&gt;
+            C.&lt;div class="row"><br>   &lt;div class="container"&gt;
+            D.&lt;div class="col-md-1"&gt;<br>&lt;div class= "row"&gt;
+            【正确答案】C
+</pre>
+    <pre>(单选题)当使用 less 查看大文件时,可以在任何一个位置作标记,可以通过()命令导航到标有特定标记的文本位置
+        A.ma - 使用 a 标记文本的当前位置
+        'a - 导航到标记 a 处
+        B.v - 使用配置的编辑器编辑当前文件
+        h - 显示 less 的帮助文档
+        C.g - 移动到第一行
+        q / ZZ - 退出 less 命令
+        D.j - 向前移动一行
+        k - 向后移动一行
+        【正确答案】A
+</pre>
+    <pre>(单选题)Bootstrap支持()种列表
+        A.2
+        B.1
+        C.3
+        D.4
+        【正确答案】C
+</pre>
+    <pre> (单选题)什么是Less()
+        A.LESSCSS是一种样式语言,属于CSS预处理语言的一种,它使用类似CSS的语法
+        B.LESSCSS是一种动态样式语言,可直接进行编译
+        C.LESSCSS是一种动态样式语言,属于CSS预处理语言的一种,它使用类似CSS的语法,为CSS的赋予了动态语言的特性,如变量、继承、运算、函数等,更方便CSS的编写和维护
+        D.LESSCSS是一种样式语言,是一种SCSS框架
+        【正确答案】C
+</pre>
+    <pre> (单选题)关于Less中变量的作用域描述错误的是()
+        A.Less 中的作用域与编程语言中的作用域概念非常相似
+        B.在局部查找变量和混合,如果没找到,编译器就会在父作用域中查找,依次类推
+        C.变量和混合必须在使用前声明
+        D.以上说法均错误
+        【正确答案】C
+</pre>
+    <pre>(单选题)如下代码结果为:
+        @var: 1px + 5;
+        A.6
+        B.6px
+        C.1
+        D.1px
+        【正确答案】B
+</pre>
+    <pre> (单选题)Bootstrap 提供了下列()类型的表单布局
+        A.垂直表单（默认）
+        内联表单
+        外联表单
+        B.垂直表单（默认）
+        内联表单
+        默认表单
+        C.垂直表单（默认）
+        内联表单
+        水平表单
+        D.垂直表单
+        内联表单
+        外联表单
+        【正确答案】C
+</pre>
+    <pre>  (单选题)Bootstrap中让表格更加紧凑的表格类是()
+        A..table-striped
+        B..table-condensed
+        C..table-bordered
+        D..table
+        【正确答案】B
+</pre>
+    <pre> (单选题)Bootstrap内置了一套响应式、移动设备优先的流式栅格系统,系统会自动分为最多()
+        A.12列
+        B.13列
+        C.11列
+        D.15列
+        【正确答案】A
+</pre>
+    <pre>  (多选题)移动设备优先策略有哪()项
+        A.内容
+        B.布局
+        C.渐进增强
+        D.table
+        【正确答案】A,B,C
+</pre>
+    <pre>(多选题)在bootstrap中,关于导航条,下列说法正确的是()
+        A.应该将被包裹的元素放到navbar-collapse类中
+        B.表单应该放置于navbar-form内
+        C.可以使用navbar-left和navbar-right来对齐导航条
+        D.可以使用navbar-fixed-top和navbar-fixed-bottom来将导航条固定到顶部或底部
+        【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)响应式网页支持的媒体类型有哪些()
+        A.print
+        B.screen
+        C.speech
+        D.all
+        【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)Bootstrap 支持那些表格元素()
+        A.tbody
+        B.tr
+            C.th
+            D.caption
+            【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)Less可以在()操作系统下运行
+        A.windows
+        B.linux
+        C.Ubuntu
+        D.Mac OS X
+        【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)Less支持那些运算符()
+        A.+
+        B.-
+        C.++
+        D./
+        【正确答案】A,B,D
+</pre>
+    <pre>(单选题)下面有关CSS中link和@import的区别,描述错误的是()
+A.link属于XHTML标签,而@import完全是CSS提供的一种方式
+B.当一个页面被加载的时候,link引用的CSS会同时被加载,而@import引用的CSS会等到页面全部被下载完再被加载
+C.link在支持CSS的浏览器上都支持而@import只在5.0以上的版本有效
+D.当使用javascript控制dom去改变样式的时候,只能使用@import方式
+【正确答案】D
+</pre>
+    <pre>(单选题)样式优先级说明正确的是()
+A.行内样式优先级最高,标签选择器样式优先级最低
+B.id选择器高于类别选择器高于标签选择器
+C.群组选择器最高
+D.派生选择器高于群组选择器
+【正确答案】B
+</pre>
+    <pre>(单选题)CSS是利用什么XHTML标记构建网页布局()
+            A.dir
+            B.div
+            C.dis
+            D.dif
+            【正确答案】B
+</pre>
+    <pre>(单选题)使用CSS的flexbox布局,不能实现以下哪一个效果()
+    A.三列布局,随容器宽度等宽弹性伸缩
+    B.多列布局,每列的高度按内容最高的一列等高
+    C.三列布局,左列宽度像素数确定,中、右列随容器宽度等宽弹性伸缩
+    D.多个宽高不等的元素,实现无缝瀑布流布局
+    【正确答案】D
+</pre>
+    <pre>(单选题)有 CSS 代码如下：
+    &lt;style type="text/css"&gt;
+        body {color:Gray;}
+        #link1 {color:Green;}
+        a { color:Red; }
+        .s1 { color:Yellow; }
+    &lt;/style&gt;
+    有 HTML 代码如下：
+    &lt;body&gt;
+    &lt;a id=”link1” class="s1">我的文本&lt;/a&gt;
+    &lt;/body&gt;
+    上述代码运行后，“我的文本”的文本颜色为（）。
+    A.Red
+    B.Yellow
+    C.Green
+    D.Gray
+    【正确答案】C
+</pre>
+    <pre> (单选题)CSS指的是()
+    A.Computer Style Sheets
+    B.Cascading Style Sheets
+    C.Creative Style Sheets
+    D.Colorful Style Sheets
+    【正确答案】B
+</pre>
+    <pre> (单选题)元素中定义样式表的属性名是()
+    A.style
+    B.class
+    C.styles
+    D.font
+    【正确答案】A
+</pre>
+    <pre>(单选题)关于为页面定义CSS样式，下列描述中，错误的是
+    A.可以将 CSS 样式定义在 HTML 元素的标准属性 style 里，即内联方式使用样式
+    B.内部样式表是指，将 CSS 样式定义在 HTML 页的头元素中的 &lt;style&gt;元素内
+        C.外部样式表是指，将 CSS 样式定义在一个外部的 CSS 文件中（.css 文件），然后在 HTML 页面上引用样式表文件
+        D.内联样式的优先级最高，因此建议优先使用
+        【正确答案】D
+</pre>
+    <pre>(单选题)以下几种在HTML文档中通过CSS的方式将文档颜色设置为红色背景,错误的是()
+        A.内联样式表:&lt;body style=”background-color:red”&gt;&lt;/body&gt;
+                                                     B.嵌入样式表:&lt;style&gt; body { background-color:red }&lt;/style&gt;
+    C.外部样式表:在当前目录下创建一个test.css文件,在文件中声明一条&lt;style>&gt;body { background-color:red } &lt;/style&gt;代码,并在HTML文档中通过&lt;link style=”text/css” rel=”stylesheet” href=”test.css”&gt;将其链接到本文档中使用
+    D.输入样式表：在当前目录下创建一个test.css文件,在文件中声明一条body { background-color:red } 代码,并在HTML文档中通过&lt;style&gt;@import url(test.css);&lt;/style&gt;输入到本文档中使用
+                                                                                                                                【正确答案】C</pre>
+    <pre>(单选题)有HTML 代码如下：
+    &lt;div style="border:1px solid #ccc;width:100px;height:50px;background-image : linear-gradient
+(180deg,#fff 0,green 100%);"&gt;&lt;/div&gt;
+    上述代码运行后，样式为（）。
+    A.设置背景色从左向右线性渐变，左侧为白色，右侧为绿色，均匀过渡
+    B.设置背景色从右向左线性渐变，右侧为白色，左侧为绿色，均匀过渡
+    C.设置背景色从上向下线性渐变，顶端为白色，底端为绿色，均匀过渡
+    D.设置背景色从下向上线性渐变，底端为白色，顶端为绿色，均匀过渡
+    【正确答案】C
+</pre>
+    <pre>(多选题)下面关于IE、FF下面CSS的解释区别描述正确的有()
+    A.FireFox的div的内嵌div可以把父级的高度撑大,而IE6.0不可以,要自己设置高度
+    B.当设置为三列布局时,FireFox0的float宽度不能达到100％,而IE6.可以.当设置为两列布局时,两种浏览器都可以
+    C.火狐浏览器中,非float的div前面有同一父级的float的div,此div若有背景图,要使用clear：both,才能显示背景图,而IE6.0中不用使用clear：both
+    D.在[text-decoration:underline]的属性下,IE6.0显示的下划线会比FireFox低一点,在FireFox中,部分笔画会在下划线的下面1个像素左右
+    【正确答案】C,D
+</pre>
+    <pre> (多选题)以下对html、CSS和两者关系说法正确的是（）
+    A.在html中不同元素要想实现相同的样式效果必须通过不同的属性来完成
+    B.实现内容与样式的分离，可以在html中引入内部样式表或外部样式表
+    C.内部样式表只能在一个页面内做通用样式定义
+    D.外部样式表可以在整个网站乃至整个互联网做通用样式定义
+    【正确答案】A,B,C,D
+    【答案解析】以上说法均正确，故选ABCD
+</pre>
+    <pre>(多选题)CSS的应用方式有()
+    A.链接到外部的JavaScript文档
+    B.链接到外部CSS文档
+    C.书写于标记内部
+    D.书写于文档头部
+    【正确答案】B,C,D
+</pre>
+    <pre>(多选题)弹性布局哪些元素可以设置
+    A.块级元素
+    B.行内元素
+    C.块级元素和行内元素
+    D.都不可以
+    【正确答案】A,B,C
+</pre>
+    <pre> (多选题)以下关于CSS说法正确的是（）
+    A.CSS，全称Cascading style sheets，也叫层叠样式表、级联样式表
+    B.CSS用于构建html元素的样式，是页面的表现
+    C.CSS样式的使用方式有三种，分别是内联方式、内部样式表和外部样式表
+    D.使用CSS可以实现内容和样式的分离，提高了程序的课重用性和可维护性
+    【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)从流中删除元素,然后在文档中后面的点上重新插入的属性是()
+A.page-policy
+B.crop
+C.move-to
+D.quotes
+【正确答案】C
+</pre>
+    <pre>(单选题)选择器权重最高的是()
+A.内联样式style
+B.外部样式表
+C.内部样式表ID派生选择器
+D.外部样式表ID选择器
+【正确答案】A
+</pre>
+    <pre>(单选题)()属性可以设置英文首字母大写
+A.text-transform:uppercase
+B.text-transform:capitalize
+C.样式表做不到
+D.text-decoration:none
+【正确答案】B
+</pre>
+    <pre>(单选题)如何使文本变为粗体()
+A.font:weight
+B.font-weight:bold
+C.style:bold
+D.style-bold:bold
+【正确答案】B
+</pre>
+    <pre>(单选题)不属于组合选择器的是()
+A.多元素选择器
+B.后代元素选择器
+C.子元素选择器
+D.通用元素选择器
+【正确答案】D
+</pre>
+    <pre>(单选题)样式表定义#title {color:red}表示()
+A.网页中的标题是红色的
+B.网页中某一个id为title的元素中的内容是红色的
+C.网页中元素名为title的内容是红色的
+D.以上任意一个都可以
+【正确答案】B
+</pre>
+    <pre>(单选题)下列选项中不属于CSS文本属性的是()
+A.font-size
+B.text-transform
+C.text-align
+D.line-height
+【正确答案】D
+</pre>
+    <pre>(单选题)下列哪种()方法可去掉文本超级链接的下划线
+A.a {text-decoration:no underline}
+B.a {underline:none}
+C.a {decoration:no underline}
+D.a {text-decoration:none}
+【正确答案】D
+</pre>
+    <pre>(单选题)以下几种在HTML文档中通过CSS的方式将文档颜色设置为红色背景,错误的是()
+A.内联样式表:body style=”background-color:red”/body
+B.嵌入样式表:style body { background-color:red }/style
+C.外部样式表:在当前目录下创建一个test.css文件,在文件中声明一条style body { background-color:red } /style代码,并在HTML文档中通过link style=”text/css” rel=”stylesheet” href=”test.css”将其链接到本文档中使用
+D.输入样式表：在当前目录下创建一个test.css文件,在文件中声明一条body { background-color:red } 代码,并在HTML文档中通过style@import url(test.css);/style输入到本文档中使用
+【正确答案】C
+</pre>
+    <pre>(单选题)以下几种样式规则的选择器中,只能修饰唯一一个HTML元素的是()
+    A.类选择器
+    B.ID选择器
+    C.关联选择器
+    D.伪元素选择器
+    【正确答案】B
+</pre>
+    <pre>(多选题)有 HTML 代码如下所示:
+    div id="d1" style="width:200px;height:100px;border:1px solid black;"div 中的文本 /div
+    现需要设置 div 中的文本效果为:蓝色文本,有灰色的文本阴影,文本在 div 中垂直方向上居中,文本距离 div 元素的左边框有 10像素的距离.
+            下列 CSS 代码中,正确的是()
+            A.#d1  {
+            color : #F00 ;
+            vertical-align: middle;
+            margin-left: 10px;
+            text-shadow : gray;
+            }
+            B.#d1  {
+            color : #F00 ;
+            line-height:100px;
+            padding-left:10px;
+            text-shadow : 5px 5px gray;
+            }
+            C.#d1  {
+            color : #F00 ;
+            line-height:100px;
+            text-indent:10px;
+            text-shadow : 5px 5px gray;
+            }
+            D.#d1  {
+            color : #F00 ;
+            vertical-align:center;
+            text-indent:10px;
+            text-shadow : 5px 5px gray;
+            }
+            【正确答案】B,C
+</pre>
+    <pre> (多选题)有样式定义如下:
+        p#p1~p { background-color:#ccc;}
+        p.s1+p { color:red; background-color:green;}
+        p{ color:blue;border:1px solid black;}
+        同时,有 html 代码如下所示:
+        p class="s1" id="p1"段落1/p
+        p段落2/p
+        p段落3/p
+        关于上述代码在页面上的显示效果,下列说法中,正确的是()
+        A.第二个段落(段落2)有边框,红色文本,灰色背景
+        B.第二个段落(段落2)有边框,蓝色文本,绿色背景
+        C.第三个段落(段落3)有边框,蓝色文本,灰色背景
+        D.第三个段落(段落3)有边框,红色文本,绿色背景
+        【正确答案】A,C
+</pre>
+    <pre>(多选题)弹性布局哪些元素可以设置
+        A.块级元素
+        B.行内元素
+        C.块级元素和行内元素
+        D.都不可以
+        【正确答案】A,B,C
+</pre>
+    <pre>(多选题)以下关于各文本属性的作用说法正确的是（）
+        A.如果想要设置文本水平居中可以设置text-align的值为center
+        B.如果想要处理a标记的下划线效果，可以通过设置text-decoration属性的值来进行操作
+        C.实现文本首行缩进，可以设置text-indent属性，其值以px为单位
+        D.如果想要垂直居中文本，可以设置行高line-height大于文本大小来实现
+        【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)有以下代码：
+        div
+            这是个div br
+            span 这是div里面的span /span
+        /div
+        又有以下代码:
+        style
+            div{
+                color:red;
+                font-weight:bold;
+            }
+            span{
+                color:blue;
+                text-align:center;
+            }
+        /style>
+        那么说法错误的有（）
+        A.div元素内的内容为红色
+        B.span元素内的内容水平居中
+        C.span元素内的内容为蓝色
+        D.span元素内的内容会加粗显示
+        【正确答案】A,B
+</pre>
+    <pre>(多选题)以下关于CSS选择器，说法不正确的是（）
+        A..4li{color:red}可以设置类名为4li的元素字体为红色
+        B.后代选择器用于选择该元素的的子代元素
+        C.匹配某元素后面紧挨着的下一个兄弟元素可以选择使用相邻兄弟选择器，相邻兄弟选择器使用“~“连接表示
+        D.通用选择器用”*”号表示
+        【正确答案】A,B,C
+</pre>
+    <pre> (多选题)属于CSS 定位属性的有()
+        A.cursor
+        B.display
+        C.vertical-align
+        D.visibility
+        【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)CSS中的选择器包括
+        A.超文本标记选择器
+        B.类选择器
+        C.标签选择器
+        D.ID选择器
+        【正确答案】B,C,D
+</pre>
+    <pre>(单选题)以下表示尺寸方式,不属于CSS单位的是()
+A.%
+B.in
+C.px
+D.ms
+【正确答案】D
+</pre>
+    <pre>(单选题)以下属性值可以用来表示元素轮廓样式的是()
+A.outline
+B.outline-color
+C.outline-style
+D.outline-width
+【正确答案】C
+</pre>
+    <pre>(单选题)以下关于盒子模型说法错误的是()
+A.基本的盒子模型由margin、padding、content、border组成
+B.margin是盒子的外补丁,即盒子边框以外的部分
+C.padding是盒子的内补丁,即盒子边框到内容之间的部分
+D.其实盒子模型有三种，分别是IE盒子模型，标准w3c盒子模型以及内容盒子模型
+【正确答案】D
+</pre>
+    <pre>(单选题)在CSS语言中下列哪一项是设置"左边框"的语法()
+            A.border-left-width:值
+            B.border-top-width:值
+            C.border-left:值
+            D.border-top-width:值
+            【正确答案】C
+</pre>
+    <pre>(单选题)有HTML 代码如下:
+div style="border:1px solid #ccc;width:100px;height:50px;background-image : linear-gradient(-90deg,#fff 0,blue 100%);" /div
+上述代码运行后,div 元素的背景样式为()
+            A.
+            背景色从左向右线性渐变,左侧为白色,右侧为蓝色,均匀过渡
+            B.
+            背景色从右向左线性渐变,右侧为白色,左侧为蓝色,均匀过渡
+            C.
+            背景色从上向下线性渐变,顶端为白色,底端为蓝色,均匀过渡
+            D.
+            背景色从下向上线性渐变,底端为白色,顶端为蓝色,均匀过渡
+            【正确答案】B
+</pre>
+    <pre>(单选题)查看如下样式定义:
+.d1 {color:Red;background-color:orange;}
+div.d2 {background-color:blue;font-size:20pt;}
+.d2 {font-size:10pt;border:1px solid red;}
+同时,有 html 代码如下所示:
+   div class="d1 d2"文本/div
+请问,div 中的“文本”的最终显示效果是()
+            A.
+            红色的20pt文本，橘色背景，红色边框
+            B.
+            红色的10pt文本，橘色背景，红色边框
+            C.
+            红色的10pt文本，蓝色背景，红色边框
+            D.
+            红色的20pt文本，蓝色背景，红色边框
+            【正确答案】D
+</pre>
+    <pre>(单选题)以下哪种边框属性可以实现点划线效果()
+A.dotted
+B.solid
+C.dashed
+D.border
+【正确答案】A
+</pre>
+    <pre>(单选题)下面那个是对边框设置为蓝色双实线()
+A.border:1px solid blue;
+B.border:3px double blue;
+C.border-width:1px double blue;
+D.border-width:1px blue doule;
+【正确答案】B
+</pre>
+    <pre>(单选题)以下哪种颜色不属于CSS标准色()
+A.aqua
+B.purple
+C.dark green
+D.navy
+【正确答案】C
+</pre>
+    <pre>(单选题)以下说法错误的是()
+A.CSS尺寸属性允许控制元素的高度和宽度
+B.min-width属性可以设置元素的最小高度
+C.max-height属性可以设置元素的最大高度
+D.line-height属性可以设置行高
+【正确答案】B
+</pre>
+    <pre>(多选题)有HTML 代码如下:
+div id="d1" style="width:100px;height:100px;border:1px solid black;" /div
+现需要将该 div 元素设置为圆形显示,且设置其背景色为渐变效果:圆心为蓝色,径向向外渐变为白色.下列选项中,正确的样式定义为()
+            A.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(#fff,blue);
+            }
+            B.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(blue,#fff);
+            }
+            C.#d1 {background-image:radial-gradient(#fff,blue);border-radius:100px; }
+            D.#d1 { background-image:radial-gradient(at center center,blue,#fff);border-radius:100px;}
+            【正确答案】B,D
+</pre>
+    <pre>(多选题)属于css颜色单位的是()
+A.rgb(x,x,x)
+B.rgb(x%, x%, x%)
+C.#rrggbb
+D.(颜色名)
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)可以用以下方法来规定 CSS 中的颜色()
+A.预定义/跨浏览器颜色名
+B.RGB 颜色
+C.十六进制色
+D.RGBA 颜色
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下关于边框属性说法正确的有（）
+A.创建不可见边框，可以设置边框颜色为transparent透明色
+B.border-radius可以实现边框倒角，单位为px或%
+C.设置box-shadow: 0px 0px 1px red;可以模拟边框红色发光效果
+D.通过设置outline: 0px或outline:none 可以取消边框轮廓
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)查看如下 html 代码:
+ div style="border:1px solid #ccc;width:100px;height:100px;" /div
+有图像 m1.gif，图像高宽均为 50px.现需要将该图像作为 div 元素的背景图像,且只显示一次,完整显示于 div 元素的右下角
+            下列样式定义中,正确的是()
+            A.div {
+            background-image: url(m1.gif);
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            }
+            B.div {
+            background-image: url(m1.gif);
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+            }
+            C.div {
+            background: url(m1.gif);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            }
+            D.div {
+            background: url(m1.gif);
+            background-position:100% bottom;
+            background-repeat: no-repeat;
+            }
+            【正确答案】A,B,D
+</pre>
+    <pre>(多选题)以下关于尺寸属性说法正确的是（）
+A.尺寸属性用于设置元素的宽度和高度，单位为px或%
+B.行内元素允许直接设置尺寸属性
+C.块级元素允许设置尺寸属性
+D.具备width和height属性的html元素，如img，table，input元素等可以设置尺寸属性
+【正确答案】A,C,D
+</pre>
+    <pre>(多选题)有 HTML 代码如下所示:
+table
+    tr
+        td aaaa /td
+        td bb /td
+    /tr
+    tr
+        td cccc /td
+        td dd /td
+    /tr
+/table
+现需要实现效果:每列宽100px,每行高50px,单元格有1px的黑色实线边框,且边框合并为单一边框,单元格中的文本水平和垂直方向均居中显示.下列选项中,能实现上述效果的是()
+A.table {
+    border-collapse:collapse;
+}
+td  {
+    border:1px solid black;
+    height:50px;
+    width:100px;
+    text-align:center;
+    vertical-align:middle;
+}
+B.td  {
+    border-collapse:collapse;
+    border:1px solid black;
+    height:50px;
+    width:100px;
+    text-align:center;
+    vertical-align:middle;
+}
+C.table {
+    width:200px;
+    height:100px;
+    border-collapse:collapse;
+}
+td  {
+    border:1px solid black;
+    text-align:center;
+    vertical-align:middle;
+}
+D.table {
+    text-align:center;
+    vertical-align:middle;
+    border-collapse:collapse;
+}
+td  {
+    border:1px solid black;
+    height:50px;
+    width:100px;
+}
+【正确答案】A,D
+</pre>
+    <pre>(多选题)查看如下 html 代码:
+ span id="s1" style="background-image:url('m1.gif');" /span
+有图像 m1.gif,图像高宽均为 50px.现需要将该图像显示为 span 元素的背景图片,且正好完全显示一个完整图像.
+下列样式定义中,正确的是()
+A.
+#s1 {padding:25px;}
+B.
+#s1 {width:50px;height:50px;float:left;}
+C.
+#s1 {width:50px;height:50px;display:inline-block;}
+D.
+#s1 {line-height:50px;padding:0px 25px;}
+【正确答案】B,C
+</pre>
+    <pre>(单选题)在css中,body{ padding-left:数值px;}表示()
+A.页面左边的表格大小
+B.页面左边的空白大小
+C.页面左边的可用区域大小
+D.页面左边的可编辑区域大小
+【正确答案】B
+</pre>
+    <pre>(单选题)关于框模型，说法正确的有（）
+A.框模型，Box Model，也称盒子模型，定义了元素框处理元素内容尺寸、边框、内边距、外边距的方式
+B.内边距指的是元素内容到边框的距离，它是在边框内部的，默认就有的
+C.外边距存在于边框外，占据页面空间，可以实际看到
+D.当框模型介入元素后，元素的内容区域尺寸改变
+【正确答案】A
+</pre>
+    <pre>(单选题)以下那种属性可以改变元素的左边距()
+A.text-indent
+B.indent
+C.margin
+D.margin-left
+【正确答案】D
+</pre>
+    <pre>(单选题)以下关于盒子模型描述正确的是()
+A.标准盒子模型中:盒子的总宽度 ＝ 左右margin + 左右border + 左右padding + width
+B.IE盒子模型中：盒子总宽度 ＝ 左右margin + 左右border + width
+C.标准盒子模型中：盒子的总宽度 ＝ 左右margin + 左右border + width
+D.IE盒子模型中：盒子总宽度 ＝ width
+【正确答案】A
+</pre>
+    <pre>(单选题)在CSS中,下面不属于BOX模型属性的是()
+A.font
+B.margin
+C.padding
+D.border
+【正确答案】A
+</pre>
+    <pre>(单选题)下面关于CSS布局的描述,不正确的是()
+A.块级元素实际占用的宽度与它的 width 属性有关
+B.块级元素实际占用的宽度与它的 border 属性有关
+C.块级元素实际占用的宽度与它的 padding 属性有关
+D.块级元素实际占用的宽度与它的 background 属性有关
+【正确答案】D
+</pre>
+    <pre>(单选题)下列关于CSS中padding属性描述错误的是()
+A.padding 简写属性在一个声明中设置所有内边距属性
+B.padding属性值允许使用负值
+C.padding:10px 5px;表示上内边距和下内边距是 10px,右内边距和左内边距是 5px
+D.padding:10px 5px 15px;表示上内边距是 10px,右内边距和左内边距是 5px,下内边距是 15px
+【正确答案】B
+</pre>
+    <pre>(单选题)下面关于样式的说法不正确的是()
+A.样式可以控制网页背景图片
+B.margin属性的属性值可以是百分比
+C.字体大小的单位可以是em
+D.1em等于18像素
+【正确答案】D
+</pre>
+    <pre>(单选题)在CSS中,关于BOX的margin属性的叙述正确的是()
+A.边距margin只能取一个值
+B.margin属性的参数有margin-left、margin-right、margin-top、
+margin-bottom
+C.margin属性的值不可为auto
+D.margin属性的参数值不能全部设置成0px
+【正确答案】B
+</pre>
+    <pre>(单选题)以下关于盒子模型说法错误的是()
+A.基本的盒子模型由margin、padding、content、border组成
+B.margin是盒子的外补丁,即盒子边框以外的部分
+C.padding是盒子的内补丁,即盒子边框到内容之间的部分
+D.其实盒子模型有三种，分别是IE盒子模型，标准w3c盒子模型以及内容盒子模型
+【正确答案】D
+</pre>
+    <pre>(多选题)有 HTML 代码如下所示:
+div id="d1" style="width:200px;height:100px;border:1px solid black;" div中的文本 /div
+现需要设置 div 中的文本效果为:蓝色文本,有灰色的文本阴影,文本在 div 中垂直方向上居中,文本距离 div 元素的左边框有 10像素的距离.
+            下列 CSS 代码中,正确的是()
+            A.#d1  {
+            color : #F00 ;
+            vertical-align: middle;
+            margin-left: 10px;
+            text-shadow : gray;
+            }
+            B.#d1  {
+            color : #F00 ;
+            line-height:100px;
+            padding-left:10px;
+            text-shadow : 5px 5px gray;
+            }
+            C.#d1  {
+            color : #F00 ;
+            line-height:100px;
+            text-indent:10px;
+            text-shadow : 5px 5px gray;
+            }
+            D.#d1  {
+            color : #F00 ;
+            vertical-align:center;
+            text-indent:10px;
+            text-shadow : 5px 5px gray;
+            }
+            【正确答案】B,C
+</pre>
+    <pre>(多选题)关于html的盒模型,下列说法正确的是()
+    A.padding是外边距
+    B.margin是内边距
+    C.border是边框
+    D.IE不支持边框圆角border-radius属性
+    【正确答案】C,D
+</pre>
+    <pre>(多选题)以下关于外边距溢出，说法正确的是（）
+    A.外边距溢出指的是在父子级元素中，设置子元素的上下边距时默认会被作用到父元素边距上
+    B.解决外边距溢出问题，可以给父元素增加边框
+    C.解决外边距溢出问题，可以增加父元素的padding-top，同时将父元素的height减少相应的数值来实现相同效果
+    D.解决外边距溢出问题，可以在增加外边距的子元素前添加一个空白的表格
+    【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)下面关于CSS的说法正确的有()
+    A.CSS可以控制网页背景图片
+    B.margin属性的属性值可以是百分比
+    C.整个BODY可以作为一个“盒”
+    D.对于中文可以使用word-spacing属性对字间距进行调整
+    【正确答案】A,B
+</pre>
+    <pre>(单选题)以下选项,用来设置背景图像是否固定或者随着页面的其余部分滚动样式属性是()
+A.background-image
+B.background-repeat
+C.background-position
+D.background-attachment
+【正确答案】D
+</pre>
+    <pre>(单选题)查看如下样式定义:
+.d1 {color:Red;background-color:orange;}
+div.d2 {background-color:blue;font-size:20pt;}
+.d2 {font-size:10pt;border:1px solid red;}
+同时,有 html 代码如下所示:
+div class="d1 d2"文本/div
+请问,div 中的“文本”的最终显示效果是()
+            A.红色的20pt文本，橘色背景，红色边框
+            B.红色的10pt文本，橘色背景，红色边框
+            C.红色的10pt文本，蓝色背景，红色边框
+            D.红色的20pt文本，蓝色背景，红色边框
+            【正确答案】D
+</pre>
+    <pre>(单选题)有 CSS 文件 demo.css，该文件中的代码如下：
+        h2{color:red;background-color:gray;}
+        有 HTML 文件代码如下：
+        !DOCTYPE HTML
+        html
+        head
+            link href="demo.css" type="text/css" rel="Stylesheet" /
+            style type="text/css"
+                h2{color:Green;font-size:20pt;}
+            /style
+        /head>
+        body>
+        h2 style="font-size:10pt;"h2 text/h2
+        /body
+        /html
+        上述代码运行后，文本“h2 text”的样式为（）。
+        A.文字大小为10pt，文本颜色为Green，背景色为 Gray
+        B.文字大小为10pt，文本颜色为默认黑色，无背景色
+        C.文字大小为10pt，文本颜色为默认黑色，无背景色
+        D.文字大小为20pt，文本颜色为Green，无背景色
+        【正确答案】A
+</pre>
+    <pre> (单选题)有HTML 代码如下:
+        div style="border:1px solid #ccc;width:100px;height:50px;background-image : linear-gradient(-90deg,#fff 0,blue 100%);" /div
+        上述代码运行后,div元素的背景样式为()
+            A.背景色从左向右线性渐变,左侧为白色,右侧为蓝色,均匀过渡
+            B.背景色从右向左线性渐变,右侧为白色,左侧为蓝色,均匀过渡
+            C.背景色从上向下线性渐变,顶端为白色,底端为蓝色,均匀过渡
+            D.背景色从下向上线性渐变,底端为白色,顶端为蓝色,均匀过渡
+            【正确答案】B
+</pre>
+    <pre>(单选题)下面哪个CSS属性是用来更改背景颜色的()
+            A.bgcolor
+            B.background-color
+            C.color
+            D.backgrounds-color
+            【正确答案】B
+</pre>
+    <pre>(单选题)查看如下样式定义:
+            #d1 span {color:Red;font-size:20pt;}
+            #d1 .s1{background-color:Yellow;}
+            span.s1 {color:Green;background-color:Gray;}
+            同时，有 HTML 代码如下：
+            div id="d1"
+                aa span class="s1" bb /span cc
+            /div
+            上述代码运行后,文本“bb”的样式为()
+            A.20pt的红色文本，黄色背景
+            B.20pt的红色文本，灰色背景
+            C.20pt的绿色文本，黄色背景
+            D.20pt的绿色文本，黄色背景
+            【正确答案】A
+</pre>
+    <pre> (单选题)以下说法正确的是()
+            A.background-color属性设置文字颜色
+            B.back-corlor属性设置背景色
+            C.background-color属性设置背景色
+            D.color属性设置背景色
+            【正确答案】C
+</pre>
+    <pre>(单选题)有 CSS 代码如下:
+            style type="text/css"
+                div {color:Gray;text-decoration:none;}
+                a { font-size:20pt; border:1px solid black;}
+                .s1 { border:1px solid Red; }
+            /style
+            有 HTML 代码如下：
+            div
+                a class="s1" href="#"我的文本/a
+            /div
+            上述代码运行后,“我的文本”的样式为()
+            A.灰色的20pt文本,红色边框,没有下划线
+            B.蓝色的20pt文本,红色边框,有下划线
+            C.黑色的20pt文本,黑色边框,没有下划线
+            D.黑色的20pt文本,红色边框,有下划线
+            【正确答案】B
+</pre>
+    <pre> (单选题)下面哪种CSS样式可以实现背景图像对齐网页右下角并且只显示一张()
+                A.background-image: url(bg.jpg); background-repeat: no-repeat; background-position: right bottom;
+                B.background-image: url(bg.jpg); background-repeat: no; background-position: right bottom;
+                C.background-image: src(bg.jpg); background-repeat: no-repeat; background-align: right bottom;
+                D.background-image: src(bg.jpg); background-repeat: no; background- align: right bottom;
+                【正确答案】A
+</pre>
+    <pre>(单选题)background-clip 与 background-origin是css3中引入的两个跟元素背景相关的属性,它们有相同的可选值分别是()
+                A.box-sizing
+                padding-box
+                margin-box
+                B.box-sizing
+                padding-box
+                content-box
+                C.border-box
+                padding-box
+                content-box
+                D.border-box
+                padding-box
+                margin-box
+                【正确答案】C
+</pre>
+    <pre>(多选题)下面关于CSS的说法正确的有()
+                A.CSS可以控制网页背景图片
+                B.margin属性的属性值可以是百分比
+                C.整个BODY可以作为一个“盒”
+                D.对于中文可以使用word-spacing属性对字间距进行调整
+                【正确答案】A,B
+</pre>
+    <pre>(多选题)有HTML 代码如下:
+                div id="d1" style="width:100px;height:100px;border:1px solid black;"/div
+                现需要将该 div 元素设置为圆形显示,且设置其背景色为渐变效果:圆心为蓝色,径向向外渐变为白色.下列选项中,正确的样式定义为()
+            A.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(#fff,blue);
+            }
+            B.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(blue,#fff);
+            }
+            C.#d1 {background-image:radial-gradient(#fff,blue);border-radius:100px; }
+            D.#d1 { background-image:radial-gradient(at center center,blue,#fff);border-radius:100px;}
+            【正确答案】B,D
+</pre>
+    <pre>(多选题)以下关于各背景属性说法正确的有（）
+                    A.如果设置背景为图片，可以设置background-image属性值为图片的URL地址
+                    B.默认情况下，背景图像会在水平和垂直方向上重复重复出现，可以设置background-repeat的值为no-repeat来设置图片只显示一次不重复
+                    C.想要调整背景图片的尺寸，可以设置background-size的值来进行调整
+                    D.可以设置background-positiion的值来进行背景图片的定位操作
+                    【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)关于background-size属性值用法描述有误的是()
+                    A.background-size:100px 100px;表示设置背景图像的100px高度和100px宽度
+                    B.background-size:cover;表示把图像图像扩展至最大尺寸,以使其宽度和高度完全适应内容区域
+                    C.background-size:contain;表示把背景图像扩展至足够大,使背景图像完全覆盖背景区域
+                    D.background-size:100%;等价于background-size:100% auto;
+                    【正确答案】B,C
+</pre>
+    <pre>(多选题)下面哪些网页背景属性可以设置()
+                    A.背景颜色
+                    B.背景图片
+                    C.背景的透明度
+                    D.以上都可以
+                    【正确答案】A,B
+</pre>
+    <pre>(多选题)查看如下 html 代码:
+                    div style="border:1px solid #ccc;width:100px;height:100px;"/div
+                    有图像 m1.gif，图像高宽均为 50px.现需要将该图像作为 div 元素的背景图像,且只显示一次,完整显示于 div 元素的右下角
+            下列样式定义中,正确的是()
+            A.div {
+            background-image: url(m1.gif);
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            }
+            B.div {
+            background-image: url(m1.gif);
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+            }
+            C.div {
+            background: url(m1.gif);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            }
+            D.div {
+            background: url(m1.gif);
+            background-position:100% bottom;
+            background-repeat: no-repeat;
+            }
+            【正确答案】A,B,D
+</pre>
+    <pre>(单选题)vertical-align 属性设置元素的()
+A.垂直居中对齐方式
+B.垂直对齐方式
+C.垂直向下排列方式
+D.垂直排列方式
+【正确答案】B
+</pre>
+    <pre>(单选题)tableLayout 属性用来显示()
+A.显示表格单元格、列的算法规则
+B.显示表格跨行、跨列的算法规则
+C.显示表格单元格、行、列的算法规则
+D.显示表格单元格、跨行、跨列的算法规则
+【正确答案】C
+</pre>
+    <pre>(单选题)border-spacing 属性是设置()
+A.相邻单元格的边框间的距离
+B.相邻的边框间的距离
+C.相邻单元格的外边距的距离
+D.相邻内边距的距离
+【正确答案】A
+</pre>
+    <pre>(单选题)border-collapse属性说法错误的是()
+A.所有主要浏览器都支持border - collapse属性
+B.border-collapse属性,如果没有指定!DOCTYPE,可能产生意想不到的效果
+C.border-collapse 属性设置表格的边框是否被合并为一个单一的边框
+D.border-collapse 用于表格属性, 表示表格的外边框合并为一条
+【正确答案】D
+</pre>
+    <pre>(单选题)以下关于 vertical-align 属性说法错误的是()
+A.vertical-align:baseline;表示元素放置在父元素的基线上
+B.vertical-align:super;表示垂直对齐文本的上标
+C.vertical-align:text-bottom;表示把元素的底端与父元素字体对齐
+D.vertical-align:middle;表示把此元素放置在父元素的中部
+【正确答案】C
+</pre>
+    <pre>(单选题)caption-side 属性设置()
+A.设置标题的位置
+B.设置表格标题的位置
+C.设置标题与内容的位置
+D.设置内容的位置
+【正确答案】B
+</pre>
+    <pre>(多选题)以下关于表格及其属性说法正确的有（）
+A.border-collapse可以添加给table、tr或td标签，它可以使两个边框进行合并
+B.border-spacing可以设置两边框间的上下左右举例，任何情况下都有效
+C.如果想设置单元格的内容垂直居中，可以给table添加属性vertical-align，属性值设置为middle即可
+D.表格默认按照自动表格布局，用属性表示即为table-layout：auto;
+【正确答案】C,D
+</pre>
+    <pre>(多选题)下列样式属性中，属于表格所特有的样式属性的是（）。
+A.border-collapse
+B.vertical-align
+C.table-layout
+D.border-spacing
+【正确答案】A,C,D
+</pre>
+    <pre>(多选题)以下关于表格显示规则，说法正确的是（）
+A.默认情况下，表格按照自动表格布局显示，即列宽由内容决定
+B.如果想要固定表格布局，可以设置table-layout的属性值为fixed
+C.自动表格布局算法较慢，加载缓慢，适用于不确定列宽时使用
+D.固定表格布局加载时不用计算，显示速度快，但不够灵活，单元格的大小取决于表格宽度、表格边框宽度和列宽度、单元格间距以及内容区域大小
+【正确答案】A,B,C
+</pre>
+    <pre>(单选题)有 CSS 样式代码如下：
+div  {
+width:100px;
+height:100px;
+border:1px solid black;
+}
+并有 html 代码如下：
+div style="float:left;"/div
+div style="float:right;"/div
+div/div
+此代码在页面上的显示效果为（）。
+A.在同一行上显示三个 div
+            B.第一行上显示两个 div，分别显示在左右两侧，第二行上没有 div
+            C.第一行上显示两个 div，分别显示在左右两侧，第二行上左侧显示一个 div
+            D.只在第一行上显示一个 div
+            【正确答案】B
+</pre>
+    <pre> (单选题)浮动会导致页面的非正常显示,以下()种清除浮动的方法是不推荐使用
+    A.在浮动元素末尾添加一个空的标签例如 div style=”clear:both”/div
+    B.通过设置父元素overflow值为hidden；
+    C.父元素也设置浮动
+    D.给父元素添加clearfix类
+    【正确答案】C
+</pre>
+    <pre>(单选题)以下不是float属性的是()
+    A.left
+    B.none
+    C.right
+    D.all
+    【正确答案】D
+</pre>
+    <pre>(单选题)overflow 属性规定()
+    A.当元素溢出元素框时发生的事情
+    B.当内容溢出元素框时发生的事情
+    C.如果内容被修剪,则浏览器会显示左滚动条以便查看其余的内容
+    D.如果内容被修剪,则浏览器会显示滚动条以便查看其余的内容
+    【正确答案】B
+</pre>
+    <pre> (单选题)css中clear的作用是()
+    A.清除该元素所有样式
+    B.清楚该元素父元素的所有样式
+    C.指明该元素周围不可出现浮动元素
+    D.指明该元素的父元素周围不可出现浮动元素
+    【正确答案】C
+</pre>
+    <pre> (单选题)以下哪种布局模型会导致元素塌陷()
+    A.浮动模型
+    B.层模型
+    C.盒子模型
+    D.流动模型
+    【正确答案】A
+</pre>
+    <pre>(单选题)不属于overflow属性值的是()
+    A.auto
+    B.scroll
+    C.hidden
+    D.target
+    【正确答案】D
+</pre>
+    <pre> (单选题)下列不属于浮动元素特征的是()
+    A.浮动元素会被自动地设置为块状元素显示
+    B.浮动元素在垂直方向上它与未被定义为浮动时的位置一样
+    C.浮动元素在水平方向上，它将最大程度地靠近其父级元素边缘
+    D.浮动元素会占用任何正常文档流空间
+    【正确答案】D
+</pre>
+    <pre>(多选题)查看如下CSS代码:
+    a{
+    width:100px;
+    height:50px;
+    border:1px solid black;
+    }
+    还有HTML代码如下所示:
+    a href="#"链接1/a
+    a href="#" style="float:left;"链接2/a
+    a href="#" style="display:block;"链接3/a
+    关于上述代码在页面上的显示效果,下列说法中,正确的是()
+    A.第一行显示链接1和链接2,链接2在链接1的左侧
+    B.第二行显示链接3
+    C.只有链接3有尺寸
+    D.链接2和链接3发生堆叠
+    【正确答案】A,B,D
+</pre>
+    <pre> (多选题)有 CSS 样式代码如下:
+    div  {
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    }
+    并有 html 代码如下:
+    div style="float:left;"/div
+    div style="float:right;clear:left;"/div
+    div style="clear:both;"/div
+    关于此代码在页面上的显示效果,下列说法中,正确的是()
+    A.三个div分为三行显示
+            B.第一个div和第三个div靠左显示,第二个div靠右显示
+                C.第一行上显示两个div,分别显示在左右两侧,第二行上显示一个 div
+                    D.第一行上显示一个 div,第二行上显示两个 div,且分别显示在左右两侧
+                    【正确答案】A,B
+</pre>
+    <pre> (多选题)将一个元素浮动后可能会发生哪些变化（）
+            A.浮动元素可能会压住其他元素
+            B.该浮动元素可能会停在它的包含框的左边或右边，或者是停靠在已浮动元素的左边或右边
+            C.块级元素浮动之后，宽度保持不变
+            D.行内元素浮动之后可以改变宽和高
+            【正确答案】A,B,D
+</pre>
+    <pre>(多选题)查看如下CSS代码:
+            div.father{border:1px solid red;}
+            div.father>div{border:1px solid
+            black;width:50px;height:50px;float:left;}
+            #d1{border:1px solid    blue;width:100px;height:100px;}
+            同时,有 html 代码如下所示:
+            div class="father"
+                div段落1/div
+                div段落2/div
+                div段落3/div
+            /div
+            div id="d1"段落4/div
+            关于上述代码在页面上的显示效果,下列说法中,正确的是()
+            A.第一行显示一个大的红色框,其中有三个并排摆放的黑色小框
+            B.第二行显示一个大的蓝色框
+            C.第一行显示一条红色的线,并显示三个并排摆放的黑色小框
+            D.蓝色大框会与三个黑色小框重叠
+            【正确答案】C,D
+</pre>
+    <pre>(多选题)以下哪种方法可以清除浮动元素对父元素高度产生的影响，（）
+                    A.可以手动设置父元素的高度
+                    B.为父元素添加overflow属性，属性值为overflow
+                    C.在父元素最后位置处增加一个子元素，给该子元素增加clear:both属性
+                    D.在父元素最后内容处增加一个空白表格
+                    【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)查看如下CSS代码:
+                    a{
+                    width:100px;
+                    height:50px;
+                    border:1px solid black;
+                    display:inline-block;
+                    text-align:center;
+                    line-height:50px;
+                    }
+                    span { border:1px solid black;}
+                    还有HTML代码如下所示:
+                    a href="#"链接1/a
+                    a href="#"链接2/a
+                    a href="#"链接3/a
+                    span other text/span
+                    关于上述代码在页面上的显示效果,下列说法中,正确的是()
+                    A.三个链接和span位于同一行显示
+B.三个链接都有尺寸,且链接文本在其中水平居中、垂直居中
+C.span 中的文本,和链接文本在垂直方向上对齐显示,即在当前行也垂直居中
+D.span 中的文本,和链接文本在垂直方向上不对齐显示,即在当前行不垂直居中
+【正确答案】A,B,C
+</pre>
+    <pre>(多选题)有CSS样式代码定义如下:
+  a  {
+    width:50px;
+    height:50px;
+    border:1px solid black;
+}
+同时,有 html 代码如下所示:
+body
+a href="#" style="display:inline-block;"链接1/a
+a href="#" style="float:right;">链接2/a
+a href="#" style="float:left;">链接3/a
+a href="#"链接4/a
+/body
+关于上述代码在页面上的显示效果,下面说法中,正确的是()
+A.4个链接都在同一行显示
+B.链接1、链接2和链接3都有尺寸,链接4没有尺寸
+C.四个链接会发生堆叠
+D.4个链接分为两行显示
+【正确答案】A,B
+</pre>
+    <pre>(多选题)查看如下 html 代码:
+ span id="s1" style="background-image:url('m1.gif');"/span
+有图像 m1.gif,图像高宽均为 50px.现需要将该图像显示为 span 元素的背景图片,且正好完全显示一个完整图像.
+下列样式定义中,正确的是()
+A.#s1 {padding:25px;}
+B.#s1 {width:50px;height:50px;float:left;}
+C.#s1 {width:50px;height:50px;display:inline-block;}
+D.#s1 {line-height:50px;padding:0px 25px;}
+【正确答案】B,C
+</pre>
+    <pre>(单选题)行内元素能转化成块元素吗?如果能如何转化()
+A.不能
+B.能,用display:inline;
+C.能,用display:block;
+D.以上说法都不正确
+【正确答案】C
+</pre>
+    <pre>(单选题)定义透明效果的CSS3 属性是()
+A.opacity
+B.opacitys
+C.opacity-style
+D.list-opacity
+【正确答案】A
+</pre>
+    <pre>(单选题)对display及visibility说明正确的是()
+A.display及visibility都能实现隐藏,且执行效果一样
+B.display及visibility都能实现隐藏,执行效果不一样,display保留原来的位置
+C.display及visibility都能实现隐藏,执行效果不一样,visibility保留原来的位置
+D.只有display实现元素隐藏
+【正确答案】C
+</pre>
+    <pre>(单选题)有 CSS 样式代码如下:
+div  {
+width:100px;
+height:100px;
+border:1px solid black;
+}
+并有 html 代码如下:
+div style="display:inline-block;"111/div
+div style="display:inline-block;"222/div
+div style="visibility:hidden;"333/div
+div style="display:inline-block;"444/div
+此代码在页面上的显示效果为()
+A.页面上显示三个div,且位于同一行显示
+            B.第一行上先显示前两个div,然后显示一个大概100px的空白区域,然后显示第四个div
+                C.第一行显示两个div,第二行为空白行,第三行显示一个div
+                D.页面上在同一行紧挨着显示三个div,分别为第一个、第二个和第四个div
+                【正确答案】C
+</pre>
+    <pre>(单选题)光标呈现为十字线的属性值是()
+                A.cursor:wait
+                B.cursor:pointer
+                C.cursor:move
+                D.cursor:crosshair
+                【正确答案】D
+</pre>
+    <pre> (单选题)opacity属性不透明度的取值范围是()
+                A.从 0.1（完全透明）到 2.0（完全不透明）
+                B.从 0.0（完全透明）到 1.0（完全不透明）
+                C.从 0.1（完全透明）到 0.9（完全不透明）
+                D.以上回答均正确
+                【正确答案】B
+</pre>
+    <pre>(单选题)以下哪种属性可以使行级元素改变成块级元素()
+                A.display:block
+                B.display:inline
+                C.div:static
+                D.div:inline-block
+                【正确答案】A
+</pre>
+    <pre>(多选题)有CSS样式代码定义如下:
+                a  {
+                width:50px;
+                height:50px;
+                border:1px solid black;
+                }
+                同时,有 html 代码如下所示:
+                body
+                a href="#" style="display:inline-block;"链接1/a
+                a href="#" style="float:right;"链接2/a
+                a href="#" style="float:left;"链接3/a
+                a href="#"链接4/a
+                /body
+                关于上述代码在页面上的显示效果,下面说法中,正确的是()
+                A.4个链接都在同一行显示
+                B.链接1、链接2和链接3都有尺寸,链接4没有尺寸
+                C.四个链接会发生堆叠
+                D.4个链接分为两行显示
+                【正确答案】A,B
+</pre>
+    <pre>(多选题)关于显示相关的属性，下列说法中，错误的是（）。
+                A.cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状
+                B.对于行内块级元素，如 img，可以使用vertical-align 属性设置垂直对齐方式
+                C.opacity 属性设置元素的不透明级别，取值为 0 到 1 之间的数值，取值为 1 ，表示完全透明
+                D.opacity 属性取值为 0.0 ，表示完全不透明
+                【正确答案】C,D
+</pre>
+    <pre>(多选题)查看如下 html 代码:
+                span id="s1" style="background-image:url('m1.gif');"/span
+                有图像 m1.gif,图像高宽均为 50px.现需要将该图像显示为 span 元素的背景图片,且正好完全显示一个完整图像.
+下列样式定义中,正确的是()
+A.#s1 {padding:25px;}
+B.#s1 {width:50px;height:50px;float:left;}
+C.#s1 {width:50px;height:50px;display:inline-block;}
+D.#s1 {line-height:50px;padding:0px 25px;}
+【正确答案】B,C
+</pre>
+    <pre>(多选题)有CSS代码如下所示:
+#d1 {
+   width:300px;
+   height:300px;
+   border:1px solid red;
+   background-color:gray;
+   opacity:0.5;
+}
+#d1>div {
+   width:100px;
+   height:100px;
+   margin:20px;
+   border:1px solid black;
+   position:fixed;
+   right:50px;
+   opacity:1;
+}
+还有如下 html 代码:
+body
+div id="d1"
+    div>111/div
+/div
+/body
+关于上述代码在页面上的显示效果,下列说法中,正确的是()
+A.大div(红色边框)显示在页面左边,具有50%的透明度
+            B.小div(黑色边框)显示在距离页面右侧50px的位置,不透明
+                C.页面滚动时,大小div都不会随着页面滚动
+                    D.小div(黑色边框)距离大div的上边框为20px
+                        【正确答案】A,D
+</pre>
+    <pre>(多选题)给行内元素设置以下那种属性后可以更改行内元素的尺寸，（）
+                                        A.display:inline
+                                        B.display:block
+                                        C.display:inline-block
+                                        D.float:left
+                                        【正确答案】B,C,D
+</pre>
+    <pre>(多选题)display:none 和 visibility:hidden的说法正确的是()
+                                        A.display:none与visibility:hidden都可以用来隐藏某个元素
+                                        B.display:none在隐藏元素的时候，将其占位空间也去掉；而visibility:hidden只是隐藏了内容而已,其占位空间仍然保留
+                                        C.display:none是不符合html5标准的
+                                        D.visibility:hidden是不符合html5标准的
+                                        【正确答案】A,B
+</pre>
+    <pre>(多选题)关于页面元素的显示，说法正确的是（）
+                                        A.可以通过display属性修改元素元素框的显示方式
+                                        B.可以通过visibility属性设置元素的显示效果为可见或不可见
+                                        C.可以通过opacity属性设置元素显示效果的透明度
+                                        D.可以通过cursor属性设置光标的显示效果
+                                        【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)在CSS语言中下列哪一项是"列表样式图像"的语法()
+A.width:值
+            B.height:值
+            C.white-space:值
+            D.list-style-image:值
+            【正确答案】D
+</pre>
+    <pre>(单选题)以下选项中()可以规定从父元素继承list-style属性的值
+    A.list-style
+    B.list-style-type
+    C.inherit
+    D.list-style-position
+    【正确答案】C
+</pre>
+    <pre>(单选题)如何能够定义列表的项目符号为实心矩形()
+    A.list-type:square
+    B.type:2
+    C.type:square
+    D.list-style-type:square
+    【正确答案】D
+</pre>
+    <pre>(单选题)如何产生带有空心圆形项目的列表()
+    A.list-type:circle
+    B.type:square
+    C.type-list:square
+    D.list-style-type:circle
+    【正确答案】D
+</pre>
+    <pre> (多选题)以下关于列表项显示标识说法正确的是（）
+    A.取消列表项标志，可以设置list-style:none 或者list-style-type:none
+    B.不能使用自定义图像作为列表项的显示标识
+    C.默认情况下，列表项标记位于文本的左边内侧
+    D.无序列表的列表项标识默认值为实心圆形，用属性表示为list-style-type:disc
+    【正确答案】A,D
+</pre>
+    <pre>(单选题)下面哪个属性不会让 div 脱离文档流()
+A.position: absolute;
+B.position: fixed;
+C.position: relative;
+D.float: left;
+【正确答案】C
+</pre>
+    <pre>(单选题)以下代码片段中,属于绝对定位的是()
+A.#bb{width：100px；position：relative;}
+B.#bb{width：100px；position：static;}
+C.#bb{width：100px;}
+D.#bb{width：100px；position：absolute;}
+【正确答案】D
+</pre>
+    <pre>(单选题)以下不属于position定位盒子方式的是()
+A.绝对定位
+B.相对定位
+C.直接定位
+D.静态定位
+【正确答案】C
+</pre>
+    <pre>(单选题)关于定位属性,下列说法中,错误的是()
+A.使用position 属性和偏移属性,可以实现相对定位、绝对定位和固定定位;使用 float 属性可以实现浮动定位
+B.绝对定位的元素将从普通流中完全移除,不占据空间,使用偏移属性后,将相对于其父元素偏移一定的距离
+C.相对定位的元素仍保持其未定位前的形状,使用偏移属性后,将相对于它原来的位置偏移某个距离,但是依然保留该元素原本所占的空间
+D.设置了固定定位的元素,其原本占用的空间不再保留
+【正确答案】B
+</pre>
+    <pre>(单选题)有样式定义如下：
+div.parent  {
+width:100px;
+height:70px;
+border:1px solid gray;
+}
+div.child  {
+width:80px;
+height:30px;
+border:1px solid black;
+background-color:silver;
+}
+同时，有 html 代码如下所示：
+body
+div class="parent"
+    div class="child"1/div
+    div class="child" style="position:absolute;top:15px;"2/div
+/div
+/body
+第二个 div （其中文本为 2 的 div）在页面上的最终位置是（）。
+A.其上边框距离 body 元素上边框为 15 px 距离
+B.其上边框距离其父元素（文本为 1 的 div） 的上边框为 15 px 距离
+C.其上边框距离其原有位置为 15 px 距离
+D.使用默认位置，定位并未发生改变
+【正确答案】A
+</pre>
+    <pre>(单选题)怎样使一个层垂直居中于浏览器中()
+A.position:absolute;
+top:50%;
+left:50%;
+padding: 50% 50%;
+B.position:absolute;
+top:50%;
+left:50%;
+margin:-150px 0 0 -100px;
+C.position:absolute;
+left:50%;
+top:100%;
+margin:0 auto;
+D.position:absolute;
+left:40%;
+top:80%;
+margin: -100 auto;
+【正确答案】B
+</pre>
+    <pre>(多选题)以下关于元素定位，相关说法是正确的是（）
+A.经过相对定位的元素会脱离文档流，不占据页面空间
+B.经过绝对定位的元素会相对于最近的已定位祖先元素或者最初的包含块来实现位置的初始化
+C.对于已定位元素，可以通过偏移属性top、bottom、left和right来实现位置的调整
+D.任意元素都能够使用堆叠顺序属性z-index来实现堆叠顺序的调整
+【正确答案】B,C
+</pre>
+    <pre>(多选题)有样式定义如下:
+div.parent  {
+width:100px;
+height:70px;
+border:1px solid gray;
+margin-top:20px;
+}
+div.child  {
+width:80px;
+height:30px;
+border:1px solid black;
+background-color:silver;
+}
+同时,有 html 代码如下所示:
+body
+div class="parent"
+    div class="child"1/div
+    div class="child" style="position:absolute;top:15px;"2/div
+/div
+/body
+现需要实现:第二个 div (其中文本为 2 的 div)的上边框距离其父元素的上边框为 15px 的距离.横线空白处可以填入的代码是()
+A.position:static
+B.position:fixed
+C.position:relative
+D.position:absolute
+【正确答案】B,C,D
+</pre>
+    <pre>(多选题)有CSS代码如下所示:
+#d1 {
+width:300px;
+height:300px;
+border:1px solid red;
+background-color:gray;
+opacity:0.5;
+}
+#d1>div {
+width:100px;
+height:100px;
+margin:20px;
+border:1px solid black;
+position:fixed;
+right:50px;
+opacity:1;
+}
+还有如下 html 代码:
+body
+div id="d1"
+    div111/div
+/div
+/body
+关于上述代码在页面上的显示效果,下列说法中,正确的是()
+A.大div(红色边框)显示在页面左边,具有50%的透明度
+            B.小div(黑色边框)显示在距离页面右侧50px的位置,不透明
+                C.页面滚动时,大小div都不会随着页面滚动
+                    D.小div(黑色边框)距离大div的上边框为20px
+                        【正确答案】A,D
+</pre>
+    <pre> (多选题)属于CSS 定位属性的有()
+                A.cursor
+                B.display
+                C.vertical-align
+                D.visibility
+                【正确答案】A,B,C,D
+</pre>
+    <pre>  (多选题)有 CSS 样式代码如下:
+                div.parent  {
+                width:100px;
+                height:70px;
+                border:1px solid gray;
+                margin-top:50px;
+                }
+                div.child  {
+                width:80px;
+                height:30px;
+                border:1px solid black;
+                background-color:silver;
+                }
+                并有 html 代码如下:
+                body
+                div class="parent"
+                    div class="child" style="position:absolute;bottom:5px;right:10px;"111/div
+                /div
+                /body
+                关于此代码在页面上的显示效果,下列说法中,正确的是()
+                A.文本为111的div距离其父元素的右边框10px,下边框5px
+            B.文本为111的div距离页面的右边框10px,下边框5px
+                C.文本为111的div距离其原有位置右边框10px,下边框5px
+                    D.如果希望小div依然包含在父div里,可以对父div设置position:fixed
+                        【正确答案】B,D
+</pre>
+    <pre>(单选题):focus伪类选择器的用途是()
+A.向拥有键盘输入焦点的元素添加样式
+B.向元素的第一个子元素添加样式
+C.向被激活的元素添加样式
+D.向已被访问的链接添加样式
+【正确答案】A
+</pre>
+    <pre>(单选题)有 CSS 代码如下：
+style type="text/css"
+    body {color:Gray;}
+    #link1 {color:Green;}
+    a { color:Red; }
+    .s1 { color:Yellow; }
+/style>
+有 HTML 代码如下：
+body
+a id=”link1” class="s1"我的文本/a
+/body>
+上述代码运行后，“我的文本”的文本颜色为（）。
+A.
+Red
+B.
+Yellow
+C.
+Green
+D.
+Gray
+【正确答案】C
+</pre>
+    <pre>(单选题)有样式定义如下:
+p[title][id]{font-size:10pt;color:Blue;background-color:Gray;}
+p[id]{font-size:20pt;}
+p[title]{color:Red;}
+同时,有 html 代码如下所示:
+p title="1" id="p1"段落1/p
+p id="p2"段落2/p
+p title="3"段落3/p
+关于上述三个段落在页面上的显示效果,下列说法中,错误的是()
+A.第一个段落(段落1)为10pt的蓝色文本,灰色背景
+B.第二个段落(段落2)为20pt的黑色文本
+C.第三个段落(段落3)为默认大小的红色文本
+D.三个段落的显示效果一样
+【正确答案】D
+</pre>
+    <pre>(单选题)下列哪个选择器不属同一类别（）
+A.：hover
+B.：active
+C.：target
+D.：focus
+【正确答案】C
+</pre>
+    <pre>(单选题)有样式定义如下:
+  div[class^='main']{font-size:20pt; border:1px solid blue;}
+  div[class$='box']{color:red;border:1px solid black;}
+  div[class~='box']{color:blue;background-color:gray;}
+  div.main_data_box {background-color:yellow;}
+同时,有 html 代码如下所示:
+div class="main_data_box"段落1/div
+关于上述代码在页面上的显示效果,下列说法中,正确的是()
+A.div显示黑色边框,20pt的红色文本,黄色背景
+    B.div显示蓝色边框,20pt的蓝色文本,灰色背景
+        C.div显示黑色边框,20pt的蓝色文本,灰色背景
+            D.div显示蓝色边框,20pt的红色文本,黄色背景
+                【正确答案】A
+</pre>
+    <pre>(单选题):visited伪类选择器的用途是()
+A.向已被访问的链接添加样式
+B.向未被访问的链接添加样式
+C.向被激活的元素添加样式
+D.向拥有键盘输入焦点的元素添加样式
+【正确答案】A
+</pre>
+    <pre>(单选题)在CSS中,”::selection选择器”中不能应用的CSS属性是()
+A.color
+B.background
+C.border
+D.cursor
+【正确答案】C
+</pre>
+    <pre>(单选题)有样式定义如下:
+p[class]{color:green;background-color:orange;}
+p[class*='info']{color:Red;background-color:yellow;}
+p[class~='style']{color:Blue;background-color:#ccc;}
+同时,有 html 代码如下所示:
+p class="style1 info"段落1/p
+p class="info"段落2/p
+关于上述代码在页面上的显示效果,下列说法中,错误的是()
+A.第一个段落(段落1)为蓝色文本,灰色背景
+B.第一个段落(段落1)为红色文本,黄色背景
+C.第二个段落(段落2)为红色文本,黄色背景
+D.两个段落的显示效果一样
+【正确答案】A
+</pre>
+    <pre>(单选题)以下不属于超链接四种状态的是()
+A.a:link表示普通的、未被访问的链接
+B.a:target表示用户已访问的链接
+C.a:hover表示鼠标指针位于链接的上方
+D.a:active表示链接被点击的时刻
+【正确答案】B
+</pre>
+    <pre>(单选题)以下伪元素描述正确的是()
+A."first-line" 伪元素只能用于行级元素
+B."first-letter" 伪元素只能用于行内块级元素
+C."first-line" 伪元素只能用于块级元素
+D."first-letter" 伪元素只能用于浮动元素中
+【正确答案】C
+</pre>
+    <pre>(单选题):checked选择器支持哪种浏览器()
+A.Opera（欧朋浏览器）
+B.Firefox（火狐浏览器）
+C.google(谷歌浏览器)
+D.Internet Explorer 10（IE10）
+【正确答案】A
+</pre>
+    <pre>(多选题)辨识以下选择器，说法正确的是（）
+A.selector1+selector2，表示相邻兄弟选择器，可以匹配元素后面任意一个兄弟元素
+B.selector1~selector2，表示通用兄弟选择器，可以匹配元素后面所有的兄弟元素
+C.:not( selector )是否定伪类选择器，选择的是指定选择器selector外的每个元素
+D.:checked是元素状态伪类选择器，在单选框和复选框中使用，可以匹配被选中的input元素，
+【正确答案】B,C,D
+</pre>
+    <pre>(单选题)以下关于:after伪类对象说法正确是()
+A.:after 伪元素在元素之后添加内容
+B.:after 伪元素只能应用于超链接标签a
+C.使用:after 伪元素可能导致浮动元素塌陷
+D.:after 不可以在元素之后添加指定链接的文件内容
+【正确答案】A
+</pre>
+    <pre>(多选题)查看如下CSS代码:
+div.father{border:1px solid red;}
+div.father>div{border:1px solid black;width:50px;height:50px;float:left;}
+div.father+div{border:1px solid blue;width:100px;height:100px;}
+.container:after{content:'' ;display:block;clear:both;  }
+同时,有 html 代码如下所示:
+div class="father container"
+    div段落1/div
+    div段落2/div
+    div段落3/div
+/div
+div段落4/div
+关于上述代码在页面上的显示效果,下列说法中,正确的是()
+A.第一行显示一个大的红色框,宽度占满整个页面,高度为正好包含其中的三个并排摆放的黑色小框
+B.第二行显示一个大的蓝色框,高度和宽度均为100
+C.第一行显示一条红色的线,并显示三个并排摆放的黑色小框
+D.蓝色大框会与三个黑色小框重叠
+【正确答案】A,B
+</pre>
+    <pre> (多选题)关于计数器，说法正确的是（）
+    A.使用计数器时，一般要配合着伪元素选择器:before、:after以及内容生成属性content一起使用
+    B.复位/初始化一个选择器，使用属性counter-reset，并设置属性值为计数器的名称和初始值，属性值之间以空格隔开
+    C.设置计数器的增量，使用属性counter-increment，该属性添加在使用计数器的元素本身
+    D.使用计数器时，用counter（）函数即可，该函数是作为content的属性值出现的
+    【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)两列之间会有缝隙间隔,缺省情况下这个间隔宽度是()
+A.1em
+B.5em
+C.2em
+D.3em
+【正确答案】A
+</pre>
+    <pre>(单选题)如果你没有提供column-count属性值,那么,浏览器就会()
+A.指定两列间边框的样式
+B.自动指定列的宽度
+C.自主决定将文本分成合适的列数
+D.自动指定列的高度
+【正确答案】C
+</pre>
+    <pre>(单选题)指定元素应该被分割的列数的属性是()
+A.column-fill
+B.column-count
+C.column-gap
+D.column-rule
+【正确答案】B
+</pre>
+    <pre>(单选题)所有 column-rule-* 属性的简写是()
+A.column-rule
+B.column-gap
+C.column-fill
+D.column-count
+【正确答案】A
+</pre>
+    <pre>(多选题)以下与多列有关说法正确的是（）
+A.column-count可以将指定的元素分隔成几列，取值为无单位数字
+B.column-gap规定列与列之间的间隔距离，取值为以px为单位的数字
+C.column-rule列规则可以规定列之间的宽度、样式以及颜色
+D.chrome，safari和firefox都支持多列
+【正确答案】A,B,C
+</pre>
+    <pre>(多选题)column-rules属性不兼容那些浏览器 ()
+A.chrome3.0
+B.IE9
+C.Safari3.1
+D.Firefox2.0
+【正确答案】A,B
+</pre>
+    <pre>(单选题)span style=”border:5px red solid”span-1/span在ie7及火狐下是否有兼容问题()
+A.没有
+B.有,在ie下没有上边框
+C.有,在ie下没有下边框
+D.有,在火狐下没有下边框
+【正确答案】C
+</pre>
+    <pre>(单选题)样式优先级说明正确的是()
+A.行内样式优先级最高,标签选择器样式优先级最低
+B.id选择器高于类别选择器高于标签选择器
+C.群组选择器最高
+D.派生选择器高于群组选择器
+【正确答案】B
+</pre>
+    <pre>(多选题)有 CSS样式代码定义如下:
+header{border:1px solid red;}
+section {background-color:#eee;height:200px;}
+section>div    {
+width:100px;
+height:100px;
+background-color:gray;
+}
+同时,有 html 代码如下所示:
+body
+headeraa/header
+section
+    div style="margin-top:20px;"/div
+/section
+/body
+关于上述代码在页面上的显示效果.下列说法中,正确的是()
+A.div 和 section 之间有 20px 的上外边距
+            B.div 和 section 之间没有外边距
+                C.section 和 header 之间有 20px 的外边距
+                    D.section 和 header 之间没有外边距
+                        【正确答案】B,C
+</pre>
+    <pre> (多选题)CSS hack主要有()种
+                A.CSS属性前缀法
+                B.IE条件注释法
+                C.声明前缀法
+                D.选择器前缀法
+                【正确答案】A,B,D
+</pre>
+    <pre></pre>
+    <pre>(单选题)2D转换元素可以改变元素的()
+A.X和Z轴
+B.X和Y轴
+C.X轴
+D.Y轴
+【正确答案】B
+</pre>
+    <pre>(单选题)只支持 2D 转换的浏览器是()
+A.Safari
+B.Chrome
+C.Internet Explorer 10
+D.Opera
+【正确答案】D
+</pre>
+    <pre>(单选题)加前缀后的Transform-origin属性,支持2D以及3D转换的浏览器是()
+A.Chrome
+B.Opera
+C.Firefox
+D.Internet Explorer
+【正确答案】A
+</pre>
+    <pre>(单选题)在css3中要使元素由一种样式转换成另一种样式,需要使用()属性
+A.animation
+B.keyframes
+C.flash
+D.transition
+【正确答案】D
+</pre>
+    <pre>(单选题)适用于2D或3D转换的元素是()
+A.transform
+B.perspective
+C.transition
+D.transition-delay
+【正确答案】A
+</pre>
+    <pre>(单选题)有 CSS 代码如下所示:
+#d1 {
+width:100px;
+height:150px;
+border:1px solid black;
+transform:rotate(45deg);
+transform-origin:100% 100%;
+}
+html 代码中,有 id 属性值为 d1 的 div 元素,此元素在页面上的显示效果,下列说法中,正确的是()
+            A.div 元素以右下角为原点,顺时针旋转 45 度
+                B.div 元素以右上角为原点,顺时针旋转 45 度
+                    C.div 元素以右下角为原点,逆时针旋转 45 度
+                        D.div 元素以右上角为原点,逆时针旋转 45 度
+                            【正确答案】A
+</pre>
+    <pre>(单选题)transition-timing-function 属性有()个值
+                    A.8
+                    B.6
+                    C.9
+                    D.10
+                    【正确答案】B
+</pre>
+    <pre>(单选题)transform-Origin属性允许您更改转换元素的位置,那么Z轴可取值是()
+                    A.%
+                    B.bottom
+                    C.length
+                    D.center
+                    【正确答案】C
+</pre>
+    <pre>(单选题)支持 transform-style 属性的浏览器是()
+                    A.Chrome
+                    B.Safari
+                    C.Firefox
+                    D.IE
+                    【正确答案】C
+</pre>
+    <pre>(单选题)通过私有属性支持transition-timing-function方法的浏览器是()
+                    A.Safari
+                    B.Internet Explorer 10
+                    C.Firefox
+                    D.Opera
+                    【正确答案】A
+</pre>
+    <pre> (多选题)不支持perspective属性的浏览器有()
+                    A.Safari
+                    B.Chrome
+                    C.IE
+                    D.Firefox
+                    【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下关于3D转换，说法正确的有（）
+                    A.所有的3D转换函数都必须要配合“视点距离“属性perspective属性一起使用
+                    B.perspective属性定义3D元素视图的距离，以px为单位，直接放在转换元素本身即可
+                    C.通过translateZ（）将元素在Z轴位移后，我们在页面上看到的实际效果是该元素放大或缩小
+                    D.通过scaleZ（）将元素在Z轴缩放后，我们想在页面上看到缩放效果必须配合X轴或Y轴旋转才行
+                    【正确答案】A,C,D
+</pre>
+    <pre>(多选题)以下关于2D转换函数，说法正确的有（）
+                    A.translate（）函数可以用来移动当前元素，translate（-50%）可以将当前元素向左位移该元素本身宽度的50%的距离
+                    B.scale（）函数可以用来将当前元素进行缩放，scale（0.5）表示当前元素以左上角为轴点将x轴和y轴同时缩小一半
+                    C.rotate（）函数可以用来将当前元素进行旋转，rotate（-45edg）表示将当前元素以中心为轴点逆时针旋转45度
+                    D.以上函数均作为转换属性transform的属性值使用有效
+                    【正确答案】A,C,D
+</pre>
+    <pre> (多选题)backface-visibility 属性不支持的浏览器有()
+                    A.Internet Explorer 10
+                    B.Firefox
+                    C.Safari
+                    D.Chrome
+                    【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)不支持transition-duration 属性的浏览器有()
+                    A.Internet Explorer 8
+                    B.Internet Explorer 7
+                    C.Internet Explorer 9
+                    D.Internet Explorer 10
+                    【正确答案】A,B,C
+</pre>
+    <pre>(多选题)transform-Origin属性允许您更改转换元素的位置,那么,X轴可取值是()
+                    A.center
+                    B.right
+                    C.length
+                    D.%
+                    【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)关于CSS中过度属性解释有误的是()
+A.transition属性用于在一个属性中设置四个过渡属性
+B.transition-duration属性定义过渡效果花费的时间,以mm为单位
+C.transition-delay属性规定过渡效果何时开始
+D.transition-timing-function属性规定过渡效果的时间曲线
+【正确答案】B
+</pre>
+    <pre>(单选题)页面上有id 属性值为 d1 的 div 元素,现需要设置该元素的背景色为蓝色,当鼠标悬停该 div 元素时,其背景色在2s之内,线性的由蓝色变为红色,鼠标移走后,背景色立即恢复为蓝色.下列 CSS 代码中,正确的是()
+        A.#d1{
+        width:100px;
+        height:100px;
+        background:blue;
+        }
+        #d1:hover{
+        background:red;
+        transition:background 2s linear;
+        }
+        B.#d1{
+        width:100px;
+        height:100px;
+        background:blue;
+        transition:background 2s linear;
+        }
+        #d1:hover{
+        background:red;
+        }
+        C.#d1{
+        width:100px;
+        height:100px;
+        }
+        #d1:hover{
+        background:red;
+        transition:background 2s linear;
+        }
+        D.#d1{
+        width:100px;
+        height:100px;
+        transition:background 2s linear;
+        }
+        #d1:hover{
+        background:red;
+        }
+        【正确答案】A
+</pre>
+    <pre>(单选题)页面上有id 属性值为 d1 的 div 元素，现需要设置该元素的背景色为绿色，当鼠标悬停该 div 元
+        素时，其背景色在5s之内，线性的由绿色变为蓝
+        色，鼠标移走后，再在 5s 之内，线性的由蓝色变
+        回绿色。下列 CSS 代码中，正确的是（）。
+        A.#d1{
+        width:100px;
+        height:100px;
+        background:green;
+        transition:background 5s linear 1s;
+        }
+        #d1:hover{background:blue;}
+        B.#d1{
+        width:100px;
+        height:100px;
+        background:green;
+        }
+        #d1:hover{
+        background:blue;
+        transition:background 5s linear 1s;
+        }
+        C.#d1{
+        width:100px;
+        height:100px;
+        background:green;
+        transition:background 5s linear 1s;
+        }
+        D.#d1{
+        width:100px;
+        height:100px;
+        transition:background 5s linear 1s;
+        }
+        #d1:hover{background:blue;}
+        【正确答案】A
+</pre>
+    <pre>(多选题)有 CSS样式代码定义如下:
+        #d1  {
+        width:150px;
+        height:150px;
+        border:1px solid black;
+        transition: background 4s linear 1s;
+        }
+        #d1:hover  { background:red;}
+        html 代码中,有 id 属性值为 d1 的 div 元素,此元素在页面上的显示效果,下列说法中,正确的是()
+            A.当鼠标悬停该 div 元素时,4s 后,该元素的背景色在 1s 之内,平滑的渐变为红色
+                B.当鼠标悬停该 div 元素时,1s 后,该元素的背景色在 4s 之内,平滑的渐变为红色
+                    C.当鼠标离开该 div 元素时,1s 后,该元素的背景色在 4s 之内,平滑的渐变为白色
+                        D.当鼠标离开该 div 元素时,该元素的背景色立即恢复为白色
+                            【正确答案】B,C
+</pre>
+    <pre>(多选题)以下关于过渡及其属性说法正确的是（）
+                                A.可以设置过渡的属性包括宽度，高度，颜色，背景图片等等
+                                B.transition-property，该属性取值为应用过渡效果的属性名称
+                                C.transition-duration，该属性用来设置完成过渡效果需要花费的时间
+                                D.transition-timing-function，该属性用来设置过渡效果的速度曲线
+                                【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)关于过渡和动画，说法正确的是（）
+                                A.过渡transition较为简单，只需要指定开始和结束的两种状态即可，CSS3会自动补全中间缺少的变化过程
+                                B.关键帧动画较为复杂，可以指定多个关键点的样式，实现较为复杂的变化
+                                C.运用CSS3动画，需要使用@keyframes规则
+                                D.浏览器对过渡支持性比对动画支持性好
+                                【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)要运用css3动画,需要运用()规则
+A.animation
+B.keyframes
+C.flash
+D.transition
+【正确答案】B
+</pre>
+    <pre>(单选题)CSS3创建动画的规则是()
+A.@key
+B.@keyframes
+C.@keyframe
+D.以上均正确
+【正确答案】B
+</pre>
+    <pre>A.过渡transition较为简单，只需要指定开始和结束的两种状态即可，CSS3会自动补全中间缺少的变化过程
+B.关键帧动画较为复杂，可以指定多个关键点的样式，实现较为复杂的变化
+C.运用CSS3动画，需要使用@keyframes规则
+D.浏览器对过渡支持性比对动画支持性好
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)有 CSS样式代码定义如下:
+@keyframes change{
+from  { transform:rotate(90deg); }
+to    { transform:rotate(450deg);  }
+}
+#d1 {
+width:150px;
+height:150px;
+border:1px solid black;
+transform-origin:100% 100%;
+animation:change 5s linear 1s 2;
+}
+html 代码中,有 id 属性值为 d1 的 div 元素.对于上述代码的运行效果,下列描述中,正确的是()
+            A.元素在1s后,开始以右下角为原点进行旋转,旋转的起始角度为顺时针90度
+            B.元素将在5秒之内顺时针旋转2圈
+            C.元素将在10秒之内顺时针旋转2圈
+            D.完成动画后,元素回到初始位置
+            【正确答案】A,C,D
+</pre>
+    <pre>(多选题)animation-fill-mode 属性可取值有()
+        A.none
+        B.forwards
+        C.backwards
+        D.both
+        【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)通过私有属性支持animation属性的浏览器是()
+        A.Internet Explorer 10
+        B.Chrome
+        C.Firefox
+        D.Safari
+        【正确答案】B,D
+</pre>
+    <pre>(多选题)通过加前缀的方法支持 @keyframes 属性的浏览器有()
+        A.Safari
+        B.Chrome
+        C.Internet Explorer 10
+        D.Opera
+        【正确答案】A,B
+</pre>
+    <pre>(多选题)支持 CSS3 animation（动画）属性的浏览器有()
+        A.Internet Explorer 10
+        B.Chrome
+        C. Firefox
+        D.Opera
+        【正确答案】A,C,D
+</pre>
+    <pre>(多选题)CSS 优化主要有()个方面
+A.加载性能
+B.选择器性能
+C.渲染性能
+D.可维护性、健壮性
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下哪种方式能够实现CSS优化（）
+A.减少HTTP请求的次数，如使用CSS Sprites技术将多张图片合成一张
+B.外部样式文件放在页面头部而不是最后
+C.首页中尽量少使用外部样式文件，首页样式全写在页内部
+D.使用压缩工具压缩样式文件，如YUI-Compressor
+【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)支持 nav-down 属性的浏览器()
+A.chrome
+B.Opera
+C.firefox
+D.IE
+【正确答案】B
+</pre>
+    <pre>(单选题)min-width 属性设置元素的最小宽度,length定义元素的最小宽度值,默认值()
+A.取决于浏览器
+B.取决于浏览器的基线
+C.取决于html
+D.取决于屏幕宽度
+【正确答案】A
+</pre>
+    <pre>(单选题)unicode-bidi 属性设置()
+A.编码
+B.文本的方向
+C.字体的方向
+D.编码格式
+【正确答案】B
+</pre>
+    <pre>(单选题)()浏览器支持 tab-size 属性
+A.Firefox
+B.Opera
+C.Chrome
+D.IE
+【正确答案】C
+</pre>
+    <pre>(单选题)()浏览器支持 text-align-last 属性
+A.chrome
+B.Internet Explorer
+C.opera
+D.Firefox
+【正确答案】B
+</pre>
+    <pre>(单选题)nav-index 属性规定元素的()
+A.浏览器分配元素的导航
+B.连续导航次序
+C.连续次序
+D.导航键控制次序
+【正确答案】B
+</pre>
+    <pre>(单选题)min-height 属性设置元素的最小高度, 其中值%代表()
+A.定义基于包含它的块级对象的百分比最小高度
+B.定义基于包含它的行级对象的百分比最小长度
+C.定义元素的最小高度,默认值是 0
+D.定义元素的最小长度,默认值是 0
+【正确答案】A
+</pre>
+    <pre>(单选题)word-spacing 属性是()
+A.增加或减少单词间的空白（即字间隔）
+B.增加或减少单词间的空白（即行间隔）
+C.增加或减少单元格间的空白（即字间隔）
+D.增加或减少单元格间的空白（即行间隔）
+【正确答案】A
+</pre>
+    <pre>(单选题)()指定!DOCTYPE才支持outline-style属性
+A.chrome
+B.IE9
+C.IE8
+D.Opera
+【正确答案】C
+</pre>
+    <pre>(单选题)nav-down: target-name表示()
+A.规定被导航的目标框架
+B.规定被导航元素的 id
+C.浏览器决定导航到哪个元素
+D.规定应从父元素继承 nav-down 属性的值
+【正确答案】A
+</pre>
+    <pre>(单选题)有HTML 代码如下:
+div style="border:1px solid #ccc;width:100px;height:50px;background-image : linear-gradient(-90deg,#fff 0,blue 100%);"/div
+上述代码运行后,div元素的背景样式为()
+            A.背景色从左向右线性渐变,左侧为白色,右侧为蓝色,均匀过渡
+            B.背景色从右向左线性渐变,右侧为白色,左侧为蓝色,均匀过渡
+            C.背景色从上向下线性渐变,顶端为白色,底端为蓝色,均匀过渡
+            D.背景色从下向上线性渐变,底端为白色,顶端为蓝色,均匀过渡
+            【正确答案】B
+</pre>
+    <pre>(单选题)Presto引擎的CSS3径向渐变语法是()
+    A.-webkit-gradient([type],[position || angle,]?[shape ||size,]?color-stop,color-stop[,color-stop]*);
+    B.-webkit-radial-gradient(position || angle,]?[shape || size,]?color-stop,color-stop[,color-stop]*);
+       C.-moz-radial-gradient(position || angle,]?[shape || size,]?color-stop,color-stop[,color-stop]*);
+         D.-o-radial-gradient(position || angle,]?[shape || size,]?color-stop,color-stop[,color-stop]*);
+                        【正确答案】D
+</pre>
+    <pre>(多选题)有HTML 代码如下:
+                                    div id="d1" style="width:100px;height:100px;border:1px solid black;"/div
+                                    现需要将该 div 元素设置为圆形显示,且设置其背景色为渐变效果:圆心为蓝色,径向向外渐变为白色.下列选项中,正确的样式定义为()
+            A.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(#fff,blue);
+            }
+            B.#d1 {
+            border-radius:50px;
+            background-image:radial-gradient(blue,#fff);
+            }
+            C.#d1 {background-image:radial-gradient(#fff,blue);border-radius:100px; }
+            D.#d1 { background-image:radial-gradient(at center center,blue,#fff);border-radius:100px;}
+            【正确答案】B,D
+</pre>
+    <pre>(单选题)不支持outline-offset 属性的浏览器是()
+A.Firefox
+B.Opera
+C.Safari
+D. Internet Explorer
+【正确答案】D
+</pre>
+    <pre>(单选题)可由用户调整元素的尺寸的方法是()
+A.resize
+B.size
+C.nav-down
+D.target-name
+【正确答案】A
+</pre>
+    <pre>(单选题)使用box-sizing 属性需要前缀的浏览器是()
+A.Opera
+B.Firefox
+C.Chrome
+D.Safari
+【正确答案】B
+</pre>
+    <pre>(多选题)将元素呈现为按钮的方法是()
+A.appearance:button;
+B.-moz-appearance:button; /* Firefox */
+C.-webkit-appearance:button; /* Safari and Chrome */
+D.type:button
+【正确答案】A,B,C
+</pre>
+    <pre>(多选题)以下哪些浏览器支持resize 属性()
+A.Safari
+B.Firefox
+C.Chrome
+D.IE
+【正确答案】A,B,C
+</pre>
+    <pre>(单选题)flex-flow是哪两个属性的简写
+A.flex-direction属性和flex-wrap属性
+B.flex-direction属性和justify-content属性
+C.justify-content属性和flex-wrap属性
+D.align-items属性和flex-direction属性
+【正确答案】A
+</pre>
+    <pre>(多选题)flex-direction都有哪些属性值
+    A.row
+    B.column
+    C.row-reverse
+    D.nowrap
+    【正确答案】A,B,C
+</pre>
+    <pre>(单选题)()属性规定当页面加载时 input 元素应该自动获得焦点
+A.formtarget
+B.readonly
+C.autofocus
+D.multiple
+【正确答案】C
+</pre>
+    <pre>(单选题)HTML5中的canvas元素用于()
+        A.显示数据库记录
+        B.操作MySQL中的数据
+        C.绘制图形
+        D.创建可拖动的元素
+        【正确答案】C
+</pre>
+    <pre> (单选题)规定帮助用户填写输入字段的提示的属性是()
+        A.placeholder
+        B.value
+        C.name
+        D.list
+        【正确答案】A
+</pre>
+    <pre>(单选题)output标签所不包括的属性是：
+        A.for
+        B.form
+        C.name
+        D.color
+        【正确答案】D
+</pre>
+    <pre>(单选题)设置在拖动过程中显示图片的方法是()
+            A.getDragImage()
+            B.setdrag()
+            C.getdrop()
+            D.setDragImage()
+            【正确答案】D
+</pre>
+    <pre> (单选题)关于output标签，以下选项描述正确的是：
+        A.Internet Explorer 支持 output 标签。
+            B.定义文件类型的输出
+            C.用来输出计算结果或用户动作的结果
+            D.定义输出域相关的一个或多个元素
+            【正确答案】C
+</pre>
+    <pre>(单选题)在HTML5中,以下哪个属性可以规定输入的字段是必填项()
+                        A.required
+                        B.formvalidate
+                        C.validate
+                        D.placeholder
+                        【正确答案】A
+</pre>
+    <pre>(单选题)清除地图上所有覆盖物的方法是()
+                        A.clearOvers()
+                        B.clears()
+                        C.clear()
+                        D.clearOverlays()
+                        【正确答案】D
+</pre>
+    <pre> (单选题)getMapType方法的返回值是()
+                        A.Number
+                        B.MapTypes
+                        C.Bounds
+                        D.Panorama
+                        【正确答案】B
+</pre>
+    <pre>(单选题)关于canvas不正确的是()
+                        A.canvas是HTML5的一部分，允许脚本动态渲染位图像
+                        B.canvas标记由 Apple 在 Safari 1.2 Web 浏览器中引入
+                        C.canvas拥有多种绘制路径、矩形、圆形、字符及添加图像的方法
+                        D.Internet Explorer自Internet Explorer9起已经可以支持canvas
+                        【正确答案】B
+</pre>
+    <pre>(多选题)以下对拖放API源元素事件，说法正确的有（）
+                            A.dragstart是源元素事件，当拖动操作开始时触发这个事件
+                            B.drag事件与mouseover事件类似，它是在源元素发生拖动时触发的
+                            C.dragend为当拖动操作结束且不论成功与否时都会触发这个事件
+                            D.源元素事件是由拖动的元素触发的
+                            【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下关于H5新增的视频处理说法正确的是（）
+                            A.可以通过video的src属性或者source元素的src属性引入视频文件
+                            B.引入的视频无法更改其宽度和高度
+                            C.可以通过autoplay属性设置该视频为自动播放
+                            D.为了节省流量，不缓存视频可以设置preload属性值为none
+                            【正确答案】A,C,D
+</pre>
+    <pre> (多选题)sessionStorage方法描述正确的是()
+                            A.sessionStorage.getItem(key):获取指定key本地存储的值
+                            B.sessionStorage.setItem(key,value):将value存储到key字段
+                            C.sessionStorage.removeItem(key):删除指定key本地存储的值
+                            D.sessionStorage.length是sessionStorage的项目数
+                            【正确答案】A,B,C,D
+</pre>
+    <pre> (多选题)什么是SVG()
+                            A.SVG 指可伸缩矢量图形 (Scalable Vector Graphics)
+                            B.SVG 用于定义用于网络的基于矢量的图形
+                            C.SVG 图像在放大或改变尺寸的情况下其图形质量不会有损失
+                            D.SVG 使用 XML 格式定义图形
+                            【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下对拖放API目标元素事件，说法正确的有（）
+                            A.目标元素事件，是由目标元素（即源元素投放的元素）触发的
+                            B.当鼠标指针第一次进入目标元素区域时，触发的是dragenter事件
+                            C.当拖动操作在目标元素内执行投放时，触发事件drop
+                            D.触发目标元素事件，都要通过e.preventDefault( )阻止默认行为
+                            【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)关于audio元素描述错误的是()
+                            A.audio 标签不是 HTML 5 的新标签
+            B.autoplay 如果出现该属性,则音频在就绪后马上播放
+            C.audio 标签不支持 HTML 5 中的全局属性
+                D.audio 标签支持 HTML 5 中的事件属性
+                    【正确答案】A,C
+</pre>
+    <pre>(多选题)Two.js 可以用于()个场合
+                                                A.SVG
+                                                B.Canvas
+                                                C.WebGL
+                                                D.2D
+                                                【正确答案】A,B,C
+</pre>
+    <pre>(多选题)对表单控件相关说法正确的是（）
+                                                A.对于input元素，可以根据type属性的不同值创建不同的输入控件
+                                                B.input元素如果不写type值或者type值写错了，则默认为文本框
+                                                C.当type的值为file时，要确保表单的method的属性值为post，enctype的属性值为multipart/formdata
+                                                D.对于单选框和复选框，可以通过checked属性设置默认被选中项，且该属性不需要值
+                                                【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)以下关于表单验证，说法正确的有（）
+                                                A.input元素的pattern属性的作用是实现元素的验证，它支持使用正则表达式指定验证规则
+                                                B.maxlength和minlength属性用来规定元素允许的最大和最小字符数
+                                                C.H5新特性中，新增validity属性利用validityState对象来描述指定元素的有效状态
+                                                D.required属性主要防止域为空时提交表单，可以设置它的值
+                                                【正确答案】A,B,C
+</pre>
+    <pre>(多选题)以下关于H5新增的音频处理说法正确的是（）
+                                                A.为页面添加音频，使用的是audio元素及其相关属性
+                                                B.audio元素支持的音频格式有MP3，Ogg，Wav三种
+                                                C.可以通过设置audio元素或source元素的src属性的值来引入音频文件
+                                                D.可以为元素添加属性autoplay来设置音频加载完成后自动播放
+                                                【正确答案】A,B,C,D
+</pre>
+    <pre>(单选题)下列哪个HTML4标签在HTML5中不使用()
+A.html
+B.frame
+C.tbody
+D.table
+【正确答案】B
+</pre>
+    <pre>(单选题)HTML代码tr/tr表示()
+A.创建一个表格
+B.表格中的一行
+C.开始一行中的每一个格子
+D.设置表格头
+【正确答案】B
+</pre>
+    <pre>(单选题)在HTML标记中,哪个标记表示单元格()
+A.h1
+            B.td
+            C.table
+            D.tab
+            【正确答案】B
+</pre>
+    <pre>(单选题)根据以下的HTML代码片段:
+                以下描述不正确是（）
+                h1 style="font-style:italic;color:limegreen;size-font=30"; hello!Nice to meet you!/h1
+                h1 this is the default display of an h1 element/h1
+                A.第一个h1设置了特定的属性
+                B.第二个h1用了系统默认的属性
+                C.“hello!Nice to meet you!”的字体颜色是浅绿色
+                D.“this is the default display of an h1 element”的字体大小为30
+                【正确答案】D
+</pre>
+    <pre>(单选题)关于textarea标签描述错误的是()
+A.textarea 标签定义多行的文本输入控件
+B.文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）
+C.在文本输入区内的文本行间,用 "br元素" （回车/换行）进行分隔
+D.textarea 标签支持 HTML 中的全局属性
+【正确答案】C
+</pre>
+    <pre>(单选题)以下位于head间的代码片段是做什么用的()
+        meta name="viewport" content="width=device-width, initial-scale=1"
+        A.使得页面编码合乎要求
+        B.表示支持响应式设计
+        C.支持正常的绘制和缩放
+        D.表示针对滚屏进行适当的适配
+        【正确答案】B
+</pre>
+    <pre>(单选题)以下关于span与div标签描述有误的是()
+                                        A.span 标签被用来组合文档中的行内元素
+B.如果与CSS 一同使用,span 元素可用于为部分文本设置样式属性
+C.div 元素有特定的含义,属于块及元素.由于它属于块级元素,浏览器会在其前后显示折行
+                    D.如果与 CSS 一同使用,div 元素可用于对大的内容块设置样式属性
+                        【正确答案】C
+</pre>
+    <pre>(单选题)以下属性中,可用于设置首行段落文本缩进的是()
+                                                                A.text-align
+                                                                B.text-weight
+                                                                C.font-indent
+                                                                D.text-indent
+                                                                【正确答案】D
+</pre>
+    <pre>(单选题)ol元素中那个属性在HTML5中不支持()
+                                                                A.type
+                                                                B.reversed
+                                                                C.start
+                                                                D.compact
+                                                                【正确答案】D
+</pre>
+    <pre>(单选题)网页提示”302 Found“的原因是()
+                                                                    A.所请求的页面已经转移至新的url
+                                                                    B.所请求的页面已经转移至新的页面
+                                                                    C.所请求的页面已经临时转移至新的url
+                                                                    D.所请求的页面已经删除至新的页面
+                                                                    【正确答案】C
+</pre>
+    <pre>(多选题)iframe的使用场景有()
+                                                                    A.与第三方域名下的页面共享cookie
+                                                                    B.上传图片,避免当前页刷新
+                                                                    C.左边固定右边自适应的布局
+                                                                    D.资源加载
+                                                                    【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)下面有关html结构描述正确的有()
+                                                                    A.ul li /li /ul
+                                                                    B.ol li /li /ol
+                                                                    C.dl dt dd /dd /dt /dl
+                                                                    D.table tr td /td /tr /table
+                                                                    【正确答案】A,B,D
+</pre>
+    <pre>(多选题)下列代码中,正确的是()
+                                                                    A.table border="1"
+            tr
+                td
+                    pbbb/p
+                /td
+            /tr
+        /table
+                                                                    B.table border="1"
+            tr
+                p
+                td bbb /td
+                /p
+            /tr
+        /table
+                                                                    C.table border="1"
+            tr
+                td
+                    bbb
+                    table border="1"
+                        tr
+                            tda/td
+                            td b /td
+                        /tr
+                    /table
+                /td
+            /tr
+        /table
+                                                                    D.table border="1"
+            tr
+                aaa
+                table border="1"
+                    tr
+                        tda/td
+                        tdb/td
+                    /tr
+                /table
+            /tr
+        /table
+                                                                    【正确答案】A,C
+</pre>
+    <pre>(多选题)以下关于HTML的说法，不正确的有（）
+                                                                        A.封闭类型标记，又称双标记，意为该标记必须成对出现，既有开始标记也有结束标记
+                                                                        B.属性可以写在开始标记或者结束标记中
+                                                                        C.写在html源码中的注释部分会被浏览器解释执行，并显示在html页面中
+                                                                        D.多属性时，属性排名不分先后
+                                                                        【正确答案】B,C
+</pre>
+    <pre>(多选题)关于web表单登录中用到的图形验证码的实现,以下做法不正确的有()
+                                                                        A.返回给浏览器的html代码中包含图形验证码和文本字符串,登录前客户端判断输入内容和页面中保存的内容是否一致
+                                                                        B.服务器端在返回的图片和cookie中同时包含图形验证码,登录前客户端判断输入内容和cookie保存的内容是否一致
+                                                                        C.服务器端生成验证码后一方面通过图片将验证码返回给客户端,同时在服务器端保存文本的验证码,由服务器端验证输入内容是否正确
+                                                                        D.浏览器通过识别图形验证码中的内容和用户输入的内容判断是否一致
+                                                                        【正确答案】A,B,D
+</pre>
+    <pre>(多选题)通过分析如下HTML代码，可以得出( )
+                                                                        table border="10"
+                                                                            tr
+                                                                                　　td colspan=2 align="center"员工号/td
+                                                                            /tr
+                                                                            tr
+                                                                                td rowspan=2 align="center"学历/td
+                                                                                td align="center"专业/td
+                                                                            /tr
+                                                                            tr
+                                                                                td colspan=2 align="center"毕业学校/td
+                                                                            /tr
+                                                                        /table
+                                                                        A.该表格共有2行3列
+                                                                        B.该表格中的文字均居中显示
+                                                                        C.该表格的边框宽度为10毫米
+                                                                        D."员工号"单元个跨2列
+                                                                        【正确答案】B,D
+</pre>
+    <pre>(多选题)关于浮动框架iframe元素，说法正确的有（）
+                                                                        A.iframe元素主要用于页面间的嵌套
+                                                                        B.将需要嵌套的页面的url写在该元素的src属性中即可实现效果
+                                                                        C.嵌套的页面无法更改也无需更改宽度和高度
+                                                                        D.默认条件下，浮动框架自带边框
+                                                                        【正确答案】A,B,D
+</pre>
+    <pre>(多选题)以下说法,错误的是()
+        A.mark用于显示变粗的文字
+            B.del用于显示删除的文字
+                C.ins的文字会带下划线
+                    D.strong用于强调文本
+                        【正确答案】A,B
+</pre>
+    <pre>(多选题)下列代码中,能正确创建表格的是()
+                                                                                                A.table border="1"
+            tr
+                td rowspan="3"a/td
+                tdb/td
+                tdc/td
+            /tr
+            tr
+                td colspan="2" rowspan="2"d/td
+            /tr
+        /table
+                                                                                                B.table border="1"
+            tr
+                td rowspan="2"a/td
+                tdb/td
+                tdc/td
+            /tr
+            tr
+                td colspan="2"d/td
+            /tr
+        /table
+                                                                                                C.table border="1"
+            tr
+                td rowspan="3"a/td
+                tdb/td
+            /tr
+            tr
+                td colspan="2"c/td
+            /tr
+            tr
+                tdd/td
+            /tr
+        /table
+                                                                                                D.table border="1"
+            tr
+                td colspan="3"a/td
+            /tr
+            tr
+                td rowspan="2"b/td
+            /tr
+            tr
+                tdc/td
+                tdd/td
+            /tr
+        /table
+                                                                                                【正确答案】A,B
+</pre>
+    <pre>(多选题)scrolling属性可取值()
+                                                                                                    A.yes
+                                                                                                    B.no
+                                                                                                    C.auto
+                                                                                                    D.%
+                                                                                                    【正确答案】A,B,C
+</pre>
+    <pre>(单选题)在OSI七层模型中,Apache属于那一层的应用()
+A.应用层
+B.会话层
+C.网络层
+D.数据链路层
+【正确答案】A
+</pre>
+    <pre>(单选题)FTP的默认端口号是()
+A.53
+B.22
+C.21
+D.443
+【正确答案】C
+</pre>
+    <pre>(单选题)FTP服务是一种有连接的文件传输服务,采用的传输层协议是()
+A.TCP协议
+B.FTP协议
+C.IPX/SPX协议
+D.TCP/IP协议
+【正确答案】A
+</pre>
+    <pre>(单选题)SMTP服务的端口默认是()
+A.21
+B.25
+C.20
+D.20或21
+【正确答案】B
+</pre>
+    <pre>(单选题)Telnet工作于哪一层()
+A.表示层
+B.应用层
+C.网络层
+D.链路层
+【正确答案】B
+</pre>
+    <pre>(单选题)能保证数据端到端可靠传输能力的是相应OSI的()
+A.网络层
+B.传输层
+C.会话层
+D.表示层
+【正确答案】B
+</pre>
+    <pre>(单选题)OSI模型有()层结构
+A.6
+B.8
+C.7
+D.9
+【正确答案】C
+</pre>
+    <pre>(单选题)对下列常见的各种网络术语,描述错误的是()
+A.DNS（域名系统）是一种用于TCP/IP应用程序的分布式数据库，因此它在TCP/IP体系结构中处于应用层。
+B.TFTP是一种文件传递应用程序，它使用的传输层协议是TCP
+C.Telnet是标准的提供远程登录功能的应用，可以在不同OS系统的主机之间运行
+D.Ping是对两个TCP/IP系统连通性进行测试的基本工具，它利用ICMP进行基本的请求和应答
+【正确答案】B
+</pre>
+    <pre>(单选题)下述关于Telnet表达错误的是()
+A.Telnet共有四种工作模式
+B.Telnet是teletype network的缩写,表示远程登录协议和方式,分为Telnet客户端和Telnet服务器程序
+C.如果服务器不在24号端口,而在其它端口等待用户连接,此时Telnet将失败
+D.Telnet是明文传送的,具有安全隐患
+【正确答案】C
+</pre>
+    <pre>(多选题)Telnet工作模式有()
+A.半双工
+B.一次一个字符
+C.准行方式
+D.行方式
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)Telnet有()作用
+A.Telnet提供远程登录功能,使得用户在本地主机上运行Telnet客户端
+B.在本地输入的命令可以在客户端上运行
+C.在本地输入的命令可以在服务器上运行,服务器把结果返回到本地
+D.服务器把结果返回到本地可以在本地远程操作
+【正确答案】A,C
+</pre>
+    <pre>(多选题)SNMP依赖于()工作
+A.IP
+B.ARP
+C.TCP
+D.UDP
+【正确答案】A,D
+</pre>
+    <pre>(单选题)Web服务器的发展有()个主要趋势
+A.1
+B.2
+C.3
+D.0
+【正确答案】C
+</pre>
+    <pre>(单选题)HTTP状态码301表示()
+A.请求成功
+B.资源(网页等)被永久转移到其它URL
+C.请求的资源(网页等)不存在
+D.内部服务器错误
+【正确答案】B
+</pre>
+    <pre>(单选题)关于HTTP协议下面哪个说法是正确()
+A.HTTP协议是有状态协议
+B.以下是一个Http链接的response 的响应头: GET /xxx/xxx/js/lib/test.js HTTP/1.1 Host: 127.0.0.1 Connection: keep-alive Pragma: no-cache Cache-Control: no-cache Accept: */*
+C.RESTful 接口中,利用HTTP协议的method字段来描述要对资源操作的方式,比如GET表示获取资源,POST表示新增一个资源,PUT表示更新资源,DELETE表示删除资源等等
+D.一个HTTP请求返回的HTTP状态码中,304表示临时重定向
+【正确答案】C
+</pre>
+    <pre>(单选题)HTTP是基于()的架构模型
+A.O2C
+B.C/S
+C.B/S
+D.D/S
+【正确答案】B
+</pre>
+    <pre>(单选题)HTTP响应也由()个部分组成
+A.3
+B.4
+C.5
+D.6
+【正确答案】B
+</pre>
+    <pre>(单选题)一个网页优化,max-age设置建议为()
+A.首页,建议为1000,也就是15分钟
+B.文本类文件,建议为10000,也就是3小时
+C.图片类文件,建议为86400,也就是14小时
+D.Swf类文件,建议为604800,也就是7天
+【正确答案】D
+</pre>
+    <pre>(单选题)网络请求中网页上的延迟有()种
+A.2
+B.3
+C.1
+D.4
+【正确答案】A
+</pre>
+    <pre>(单选题)ECMAScript 6 新特性let 命令用于()
+A.声明常量
+B.声明赋值
+C.声明变量
+D.声明
+【正确答案】C
+</pre>
+    <pre>(单选题)用于将两类对象转为真正数组的方法是()
+A.Array.from
+B.Arrays.froms
+C.Array.froms
+D.Arrays.from
+【正确答案】A
+</pre>
+    <pre>(单选题)let obj = {
+[Symbol('my_key')]: 1,
+enum: 5,
+nonEnum: 6
+};
+Reflect.ownKeys(obj)
+上述代码返回正确的结果是()
+A.[Symbol(my_key), '5', '6']
+B.[Symbol(my_key), 'enum', 'nonEnum']
+C.['1', '5', '6']
+D.以上均正确
+【正确答案】B
+</pre>
+    <pre>(单选题)ES6中与ES5中(===)一样效果的方法是()
+A.=
+B.Object.on()
+C.Object.is()
+D.equals()
+【正确答案】C
+</pre>
+    <pre>(单选题)var a = [];
+for (var i = 0; i < 10; i++) {
+a[i] = function () {
+console.log(i);
+};
+}
+a[6]();
+正确的输出结果是()
+A.10
+B.6
+C.0
+D.8
+【正确答案】A
+</pre>
+    <pre>(单选题)var a = [];
+for (let i = 0; i < 10; i++) {
+a[i] = function () {
+console.log(i);
+};
+}
+a[100]();
+正确的输出结果是()
+A.10
+B.1
+C.5
+D.100
+【正确答案】D
+</pre>
+    <pre>(单选题)var tmp = 123;
+if (true) {
+tmp = 'abc';
+let tmp;
+}
+上述代码正确的是()
+A.ReferenceError
+B.Error
+C.abc
+D.123
+【正确答案】A
+</pre>
+    <pre>(单选题)ES6 提供了()进制和()进制数值的新的写法,前缀是()
+A.十进制和八进制
+B.十六进制和八进制
+C.二进制和八进制
+D.十进制和十六进制
+【正确答案】C
+</pre>
+    <pre>(单选题)function* gen(x){
+var y = yield x + 2;
+return y;
+}
+
+var g = gen(1);
+g.next()
+g.next()
+上述代码,返回的正确结果是()
+A.{ value: 2, done: true }
+{ value: undefined, done: true }
+B.{ value: 2, done:1 }
+{ value: undefined, done:false }
+C.{ value: 3, done: true }
+{ value: undefined, done: false }
+D.{ value: 3, done: false }
+{ value: undefined, done: true }
+【正确答案】D
+</pre>
+    <pre>(多选题)ES6推荐设置原型对象的方法有()
+A.Object.setPrototypeOf
+B.proto__
+C.__proto__
+D.Object.setPrototypesOf
+【正确答案】A,C
+</pre>
+    <pre>(多选题)ES6规范定义了一个全新的全局构造函数:代理(Proxy),它可以接受两个参数
+A.事件对象（Event）
+B.目标对象（target）
+C.句柄对象（handler）
+D.节点对象（document）
+【正确答案】B,C
+</pre>
+    <pre>(多选题)var foo = 'bar';
+var baz = {foo};
+baz // {foo: "bar"}
+// 等同于
+var baz = {foo: foo};
+上述代码中,以下说法错误的是()
+A.ES6允许直接写入变量和函数,作为对象的属性和方法
+B.ES6不允许在对象之中,不写属性值
+C.ES6允许在对象之中,只写属性名,不写属性值
+D.以上说法均有误
+【正确答案】B,D
+</pre>
+    <pre>(多选题)JavaScript只有indexOf方法,可以用来确定一个字符串是否包含在另一个字符串中.ES6新特性中有()新方法
+A.includes()
+B.startsWith()
+C.repeat()
+D.endsWith()
+【正确答案】A,B,D
+</pre>
+    <pre>(多选题)extends后面可以接驳任意合法且拥有prototype属性的构造函数,它可以是()
+A.一个函数调用
+B.一个对象上的属性访问
+C.一个包含一个函数或类的变量
+D.一个普通的函数
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)ES6 新特性中修饰器只能用于()
+A.类的方法
+B.类
+C.类的函数
+D.函数
+【正确答案】A,B
+</pre>
+    <pre>(多选题)查下如下代码,说法正确的是：
+class ColorPoint extends Point {
+constructor(x, y, color) {
+super(x, y); // 调用父类的constructor(x, y)
+this.color = color;
+}
+
+toString() {
+return this.color + ' ' + super.toString(); // 调用父类的toString()
+}
+}
+A.constructor方法和toString方法之中,都出现了super关键字,它在这里表示父类的构造函数
+B.constructor方法和toString方法之中,都出现了super关键字,用来新建父类的this对象
+C.子类必须在constructor方法中调用super方法,否则新建实例时会报错
+D.如果不调用super方法,子类就得不到this对象
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)=> 是function的简写形式,支持哪()种形式
+A.statement
+B.this
+C.expression
+D.null
+【正确答案】A,C
+【答案解析】=> 是function的简写形式,支持expression 和 statement 两种形式.同时一点很重要的是它拥有词法作用域的this值,帮你很好的解决this的指向问题,这是一个很酷的方式,可以帮你减少一些代码的编写,语法:
+([param] [, param]) => {
+statements
+}
+param => expression,所以选AC
+</pre>
+    <pre>(多选题)ES6 新特性中严格模式有哪些限制()
+A.变量必须声明后再使用
+函数的参数不能有同名属性,否则报错
+不能使用with语句
+不能对只读属性赋值,否则报错
+B.不能使用前缀0表示八进制数,否则报错
+不能删除不可删除的属性,否则报错
+不能删除变量delete prop,会报错,只能删除属性delete global[prop]
+C.eval不会在它的外层作用域引入变量
+eval和arguments不能被重新赋值
+arguments不会自动反映函数参数的变化
+不能使用arguments.callee
+不能使用arguments.caller
+D.禁止this指向全局对象
+不能使用fn.caller和fn.arguments获取函数调用的堆栈
+增加了保留字（比如protected、static和interface）
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)在ES6中,模块的功能主要由()组成
+A.export
+B.name
+C.import
+D.url
+【正确答案】A,C
+</pre>
+    <pre>(单选题)javascript中不属于内置对象的是()
+A.Arrays
+B.String
+C.Object
+D.Global
+【正确答案】A
+</pre>
+    <pre>(单选题)var x = new Boolean(false);
+if (x) {
+alert('hi');
+}
+var y = Boolean(0);
+if (y) {
+alert('hello');
+}
+的显示结果是()
+A.hi
+B.hi hello
+C.hello
+D.不显示
+【正确答案】A
+</pre>
+    <pre>(单选题)如下代码的表示是()
+var floatNum4 = 3.12e7;
+A.//3.12乘以10的7次方
+B.//3.127
+C.//NAN
+D.//null
+【正确答案】A
+</pre>
+    <pre>(单选题)js中字符串连接用()比较高效
+A.a+=b
+B.a = a+b
+C.Array.join()
+D.Array.push()
+【正确答案】C
+</pre>
+    <pre>(单选题)以下为一段浏览器中可运行的Javascript 代码,则运行该段Javascript代码的页面弹出框中显示的结果是()
+var obj = {"key":"1","value":"2"};
+var newObj = obj;
+newObj.value += obj.key;
+alert(obj.value);
+A.2
+B.12
+C.3
+D.21
+【正确答案】D
+</pre>
+    <pre>(单选题)JavaScript中专门存储数组类型的是()
+A.String
+B.Number
+C.number
+D.string
+【正确答案】B
+</pre>
+    <pre>(单选题)以下表达式的运行结果是()
+var a = [0];
+if([0]){
+console.info(a == true);
+}else{
+console.info("else");
+}
+A.true
+B.false
+C."else"
+D.其他
+【正确答案】B
+</pre>
+    <pre>(单选题)如何判断一个js对象是否是Array,arr为要判断的对象,其中最准确的方法是()
+A.typeof(arr)
+B.arr instanceof Array
+C.arr.toString==='[object Array]';
+D.Object.prototype.toString.call(arr) === '[object Array]';
+【正确答案】D
+</pre>
+    <pre>(单选题)下列代码
+var person={fname:"John",lname:"Doe",age:25};
+var txt="";
+for (x in person)
+{
+txt=txt + person[x];
+}
+alert(txt);
+输出为()
+A.JohnDoe25
+B.fname:"John",lname:"Doe",age:25
+C.fname:John,lname:Doe,age:25
+D.fnamelnameage
+【正确答案】A
+</pre>
+    <pre>(单选题)JavaScript有几种数据类型()
+A.7
+B.5
+C.6
+D.9
+【正确答案】A
+</pre>
+    <pre>(多选题)JavaScript有()复合类型
+A.function
+B.string
+C.boolean
+D.object
+【正确答案】A,D
+</pre>
+    <pre>(多选题)声明变量var hello = "hello",以下那种方法可以使我们正确将其输出（）
+A.alert( Hello );
+B.document.write( hello );
+C.console.log ( HELLO );
+D.console.log ( hello );
+【正确答案】B,D
+</pre>
+    <pre>(多选题)下面方法表达错误的是()
+A.toLocaleTimeString()表示根据本地时间格式,把 Date 对象转换为字符串
+B.setUTCMilliseconds()表示根据本地时钟设置 Date 对象中的毫秒(0 ~ 999)
+C.toLocaleDateString()表示根据系统时间格式,把 Date 对象转换为字符串
+D.setMilliseconds()表示设置 Date 对象中的分钟(0 ~ 999)
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)关于分支结构，说法正确的是（）
+A.如果我们想要让程序根据不同的条件执行不同的操作，需要使用到分支结构
+B.分支结构中的条件都默认转为布尔类型
+C.如果想要中止并推出当前的分支结构，我们可以配合break一起使用
+D.在switch...case...结构中，条件表达式和case进行的是“全等”比较
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)对于连接数组操作，说法正确的是（）
+A.将两个数组进行连接使用的方法是concat()
+B.concat直接在原数组上进行修改
+C.concat可以传入多个参数进行连接
+D.concat会自动打散参数中的数组，以单个元素形式进行拼接
+【正确答案】A,C,D
+</pre>
+    <pre>(多选题)下列哪两项可以创建函数()
+A.function=myFunction(){……..}
+B.function myFunction(){…...}
+C.myfunction = function(){…….}
+D.myFunction(){….}
+【正确答案】B,C
+</pre>
+    <pre>(多选题)以下代码运行结果正确的是（），var o={x:1};var p=null;
+A.o&&o.x //=>1
+B.p&&p.x //=>1
+C.o&&o.x //=>null
+D.p&&p.x //=>null
+【正确答案】A,D
+</pre>
+    <pre>(多选题)使用JavaScript可以实现以下哪些操作（）
+A.网页特殊显示效果，动画效果等的制作
+B.实现用户表单的输入验证
+C.浏览器事件的触发和处理
+D.异步提交服务器数据
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)如何规避javascript多人开发函数重名问题()
+A.可以通过命名规范，比如根据不同的开发人员实现的功能，在函数名加前缀
+B.每个开发人员都把自己的函数封装到类中,然后调用的时候即使函数名相同,但是因为是要类.函数名来调用,所以也减少了重复的可能性
+C.不必考虑命名规范
+D.以上答案都不正确
+【正确答案】A,B
+</pre>
+    <pre>(多选题)对于slice说法正确的是（）
+A.slice可以进行数组元素的截取
+B.slice中的参数如果只有一位，表示从当前参数位置截取到数组结尾
+C.slice中的参数不可以是负数
+D.slice直接修改原数组
+【正确答案】A,B
+</pre>
+    <pre>(单选题)创建文本节点的方法是()
+A.createTextNode()
+B.createElement()
+C.createAttribute()
+D.appendChild()
+【正确答案】A
+</pre>
+    <pre>(单选题)能够返回父节点的方法是()
+A.parentNode
+B.nodeName
+C.nodeValue
+D.nodeType
+【正确答案】A
+</pre>
+    <pre>(单选题)()属性来访问文本节点的值
+A.innerhtml
+B.innerHTML
+C.innerText
+D.innertext
+【正确答案】A
+</pre>
+    <pre>(单选题)向节点添加最后一个子节点的方法是()
+A.appendTo()
+B.appendChild()
+C.append()
+D.insert()
+【正确答案】B
+</pre>
+    <pre>(单选题)能够返回节点列表的方法是()
+A.getElementById()
+B.appendChild()
+C.removeChild()
+D.getElementsByTagName()
+【正确答案】D
+</pre>
+    <pre>(单选题)XML DOM 定义了所有 XML 元素的()
+A.变量和函数
+B.方法和属性
+C.对象和属性以及访问它们的方法
+D.变量和属性以及访问它们的方法
+【正确答案】C
+</pre>
+    <pre>(单选题)能够返回节点文本值的方法是()
+A.innerHTML
+B.childNodes
+C.parentNode
+D.attributes
+【正确答案】A
+</pre>
+    <pre>(单选题)在指定的子节点之前插入节点的方法是()
+A.appendChild()
+B.insertBefore()
+C.setAttribute(name,value)
+D.insertData(offset,string)
+【正确答案】B
+</pre>
+    <pre>(单选题)JavaScript中document.getElementById的返回值的类型为()
+A.Array
+B.Object
+C.String
+D.Function
+【正确答案】B
+</pre>
+    <pre>(单选题)replaceChild() 方法表示()
+A.用节点替换某个父节点
+B.用节点替换某个子节点
+C.用子节点替换某个新节点
+D.用新节点替换某个子节点
+【正确答案】D
+</pre>
+    <pre>(多选题)通过CSS选择符查找元素的方法是 ()
+A.querySelector()
+B.getAttribute(name)
+C.querySelectorAll()
+D.hasAttribute(name)
+【正确答案】A,C
+</pre>
+    <pre>(多选题)HTML DOM 是()
+A.HTML 的标准对象模型
+B.HTML 的标准编程接口
+C.W3C 标准
+D.HTML 的抽象编程接口
+【正确答案】A,B,C
+</pre>
+    <pre>(多选题)关于DOM节点树描述有误的是()
+A.每个 HTML 元素是元素节点
+B.整个文档是一个根节点
+C.注释是文本节点
+D.HTML 元素内的文本是节点
+【正确答案】B,C,D
+</pre>
+    <pre>(单选题)获取屏幕高度的方法是()
+A.screen.availWidth
+B.screen.Width
+C.screen.Height
+D.screen.availHeight
+【正确答案】D
+</pre>
+    <pre>(单选题)Cookies 的作用是()
+A.保存手机端的账号信息
+B.记录移动端的用户信息
+C.记录客户端的用户信息
+D.记录客户端的账户信息
+【正确答案】C
+</pre>
+    <pre>(单选题)()属性可以返回URL 的路径名
+A.location.path
+B.location.pathnames
+C.location.pathname
+D.location.URL
+【正确答案】C
+</pre>
+    <pre>(单选题)调整当前窗口尺寸的方法是()
+A.window.open()
+B.window.resizeTo()
+C.window.close()
+D.window.moveTo()
+【正确答案】B
+</pre>
+    <pre>(单选题)移动当前窗口的方法是()
+A.window.open()
+B.window.close()
+C.window.moveTo()
+D.window.resizeTo()
+【正确答案】C
+</pre>
+    <pre>(单选题)在浏览器中点击按钮实现可以实现向前效果的是()
+A.history.back()
+B.window.history
+C.history.forward()
+D.没有这样的方法
+【正确答案】C
+</pre>
+    <pre>(单选题)关闭当前窗口的方法是()
+A.window.open()
+B.window.close()
+C.window.moveTo()
+D.window.resizeTo()
+【正确答案】B
+</pre>
+    <pre>(单选题)返回所使用 web 协议的方法是()
+A.location.hostname
+B.location.pathname
+C.location.port
+D.location.protocol
+【正确答案】D
+</pre>
+    <pre>(单选题)以下说法错误的是()
+A.window.open()方法既可以打开一个特定的URL
+B.window.open()可以打开一个新的浏览器窗口
+C.window.open()方法接收3个参数：URL,窗口目标,一个特性字符串
+D.以上说法均错误
+【正确答案】C
+</pre>
+    <pre>(单选题)全局函数是 window 对象的()
+A.方法
+B.属性
+C.值
+D.变量
+【正确答案】A
+</pre>
+    <pre>(多选题)以下属于标准 Event 方法的是()
+A.initEvent()
+B.stopPropagation()
+C.stop()
+D.preventDefault()
+【正确答案】A,B,D
+</pre>
+    <pre>(多选题)下面有关javascript内部对象的描述,正确的有()
+A.History 对象包含用户（在浏览器窗口中）访问过的 URL
+B.Location 对象包含有关当前 URL 的信息
+C.Window 对象表示浏览器中打开的窗口
+D.Navigator 对象包含有关浏览器的信息
+【正确答案】A,B,C,D
+</pre>
+    <pre>(多选题)属于event对象事件句柄属性是()
+A.onblur
+B.onchange
+C.onkeydown
+D.onunload
+【正确答案】A,B,C,D
+</pre>
+
+</div>
+</body>
+</html>
