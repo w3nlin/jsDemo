@@ -16,31 +16,31 @@
     </style>
     <script>
         window.onload=function(){
-                t1.onfocus=function(){
-                    for(var i=0;i<main.children.length;i++){
-                        main.children[i].style.display="none";
+            t1.onfocus=function(){
+                for(var i=0;i<main.children.length;i++){
+                    main.children[i].style.display="none";
+                }
+            }
+            t1.onblur=function(e){
+                for(var i=0;i<main.children.length;i++){
+                    if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1&&(t1.value!="")){
+                        main.children[i].style.display="block";
+                        main.children[i].style.border="1px dashed blue";
                     }
                 }
-                t1.onblur=function(e){
+            }
+            document.onkeydown=function(e){
+                if(e.keyCode==13){
                     for(var i=0;i<main.children.length;i++){
-                        if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1&&(t1.value!="")){
+                        if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1){
                             main.children[i].style.display="block";
                             main.children[i].style.border="1px dashed blue";
                         }
                     }
                 }
-                document.onkeydown=function(e){
-                    if(e.keyCode==13){
-                        for(var i=0;i<main.children.length;i++){
-                            if(main.children[i].innerHTML.toLowerCase().indexOf(t1.value.toLowerCase())!=-1){
-                                main.children[i].style.display="block";
-                                main.children[i].style.border="1px dashed blue";
-                            }
-                        }
-                    }
-                
+
             }
-            }
+        }
     </script>
 </head>
 <body>
@@ -3514,7 +3514,119 @@ C.onkeydown
 D.onunload
 【正确答案】A,B,C,D
 </pre>
-
+    <pre>(多选题)关于SQL和MySQL的说法正确的有哪些（）。
+A.SQL全称Structured Query Language，是MySQL数据库专用的操作语言，其它RDBMS无法使用。
+B.SQL语句分为四类：DDL、DML、DQL、DCL。
+C.MySQL脚本文件中，可以使用//和/**/两种注释。
+D.MySQL命令行环境中，可以使用source命令执行一个脚本文件中的所有SQL语句。
+【正确答案】B,D</pre>
+    <pre>(多选题)假设员工表emp有eid/ename/salary三列，没有特别的约束，则下列INSERT语句语法正确的有：（）
+A.INSERT INTO emp(eid,ename) VALUES(20, 'MARY');
+B.INSERT INTO emp VALUES(10, 'TOM');
+C.INSERT INTO emp VALUES(30, 40, 50),('JIM','JERRY','JANE'),(7000,8000,9000);
+D.INSERT INTO emp VALUES(60, 'TOM', 6000), (70, 'TOM', 7000), (80, 'TOM', 8000);
+【正确答案】A,D</pre>
+    <pre>(多选题)项目中的数据的保存可以采用哪些方式（）。
+A.临时数据，可以保存在内存中;
+B.使用格式化的文件（如Excel），永久保存在文件系统中;
+C.使用自定义文件，永久保存在应用程序服务器所在的文件系统中;
+D.使用数据库，永久保存在数据库管理系统中;
+【正确答案】A,B,C,D</pre>
+    <pre>(多选题)假设所需表和列都存在，则下列查询语句语法及语义错误的有：
+A.SELECT  *  FROM  emp  ORDER  BY  salary  DESC,  ename ASC;
+B.SELECT  ename  FROM  emp WHERE  30>eid>10;
+C.SELECT  COUNT(*)  FROM  emp  GROUP  BY  dept_id;
+D.SELECT  ename  AS  n  salary  AS  s  FROM  emp;
+【正确答案】B,D</pre>
+    <pre>(多选题)关于MySQL列约束的下列描述中正确的有()
+A.一个表可以声明多个主键列
+B.主键约束会影响表的查找操作执行效率，应当谨慎使用
+C.外键约束会影响表的插入操作执行效率，应当谨慎使用
+D.一个表可以声明多个外键列
+【正确答案】C,D</pre>
+    <pre>(多选题)下列哪些是NodeJS官方提供的原生模块？()
+A.Buffer
+B.Npm
+C.Querystring
+D.Url
+【正确答案】A,C,D</pre>
+    <pre>(多选题)有关JavaScript特点的描述中，错误的是（）。
+A.弱类型语言，没有数据类型的概念
+B.有函数的概念，也有对象的概念
+C.解释型语言
+D.一次编译，到处运行
+【正确答案】A,D</pre>
+    <pre>(多选题)下列说法错误的是()
+A.JS运行于客户端浏览中,存在兼容性问题
+B.NodeJS运行服务端(V8),存在兼容性问题
+C.JS的数据类型为值类型+引用类型(ES+扩展对象+自定义)
+D.NodeJS数据类型:值类型+引用类型(ES+扩展对象+自定义)
+【正确答案】B,C</pre>
+    <pre>(单选题)以下是nodejs中核心模块FS中删除文件的方法是()
+A.fs.writeFile()
+B.fs.rename()
+C.fs.unlink()
+D.fs.rmdir()
+【正确答案】C</pre>
+    <pre>(单选题)对于每一个被加载的文件模块，创建这个模块的时候，模块查找的过程是？()
+1.原生模块
+2.文件/目录模块的缓存
+3.文件/目录模块
+4.原生模块缓存
+A.2-4-1-3
+B.1-2-3-4
+C.3-2-1-4
+D.2-3-1-4
+【正确答案】A</pre>
+    <pre>(单选题)使用MySQL自带的命令行客户端工具连接MySQL服务器的命令是（）。
+A.mysql.exe -h127.0.0.1 -p3306 -uroot -P123456 -Dtarena
+B.mysql.exe -hlocalhost -P3306 -uroot -p123456 -Dtarena
+C.mysqld.exe -h127.0.0.1 -P3306 -uroot -p123456 -Dtarena
+D.mysqld.exe -hlocalhost -p3306 -uroot -P123456 -Dtarena
+【正确答案】B</pre>
+    <pre>(单选题)下列表达式的值哪个为true（）。
+A.null instanceof Object
+B.null === undefined
+C.null == undefined
+D.NaN == NaN
+【正确答案】C</pre>
+    <pre>(单选题)下列语句哪句不属于DML语句（）。
+A.INSERT
+B.UPDATE
+C.SELECT
+D.DELETE
+【正确答案】C</pre>
+    <pre>(单选题)以下关于“错误对象”说法错误的是()
+A.nodejs中异步函数调用和同步函数调用抛出错误后处理方式不同
+B.由操作系统底层限制引起的自动错误也属于nodejs的错误类型
+C.nodejs错误类型包括原生js提供的错误类型
+D.异步函数调用抛出错误可以用try...Catch结构进行捕获处理
+【正确答案】D</pre>
+    <pre>(单选题)以下关于“错误对象”说法错误的是()
+A.nodejs中异步函数调用和同步函数调用抛出错误后处理方式不同
+B.由操作系统底层限制引起的自动错误也属于nodejs的错误类型
+C.nodejs错误类型包括原生js提供的错误类型
+D.异步函数调用抛出错误可以用try...Catch结构进行捕获处理
+【正确答案】D</pre>
+    <pre>(单选题)下列关于C/S与B/S应用的描述中，错误的是（）。
+A.C/S指Client-Server，这样的应用程序服务器和客户端一般都需要安装一个专用的程序。
+B.一般来说，C/S应用的部署实施和维护比B/S应用更加方便，费用更低。
+C.历史上C/S应用比B/S应用出现的更早；但B/S相较于C/S的优势正在日益凸显。
+D.B/S指Browser-Server，这样的应用程序服务器需要一款专用的程序，而客户端只需要使用浏览器即可。
+【正确答案】B</pre>
+    <pre>(单选题)nodejs是基于ECMAScript语言开发的服务器语言，以下错误的是()
+A.运行nodejs有两种方式，交互模式和脚本模式
+B.nodejs和javascript 语法类似，功能不同
+C.nodejs可以编写独立的服务器应用，可以向客户端提供web内容，但无需借助于任何web服务器
+D.nodejs中全局对象是global，所有变量都是都是global对象的属性
+【正确答案】D</pre>
+    <pre>(单选题)下述SELECT语句中各不同子句出现顺序中语法正确的有：（）
+A.SELECT ... FROM ... LIMIT ... WHERE ... GROUP BY ... ORDER BY ...;
+B.SELECT ... FROM ... WHERE ... GROUP BY ... ORDER BY ... LIMIT ...;
+C.SELECT ... FROM ... LIMIT ...WHERE ... ORDER BY ...;
+D.SELECT ... FROM ... WHERE ... ORDER BY ... GROUP BY ... LIMIT ...;
+【正确答案】B</pre>
 </div>
 </body>
 </html>
+
